@@ -9,6 +9,18 @@ npm i
 npm run dev
 ```
 
+Using Layer-0
+
+```
+npm install -g @layer0/cli
+
+layer0:dev - Simulate your app on Layer0 locally.
+
+layer0:build - Build your app for deployment on Layer0.
+
+layer0:deploy - Build and deploy your app on Layer0.
+```
+
 # Production
 
 You can get a better sense of the speed of React Storefront by running a production build:
