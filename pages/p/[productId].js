@@ -22,7 +22,7 @@ import SuggestedProducts from '../../components/product/SuggestedProducts'
 import Lazy from 'react-storefront/Lazy'
 import TabPanel from 'react-storefront/TabPanel'
 import QuantitySelector from 'react-storefront/QuantitySelector'
-import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
+// import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
 import createLazyProps from 'react-storefront/props/createLazyProps'
 
@@ -180,7 +180,7 @@ const Product = React.memo(lazyProps => {
                         <Label>COLOR: </Label>
                         <Typography>{color.text}</Typography>
                       </Hbox>
-                      <ProductOptionSelector
+                      {/* <ProductOptionSelector
                         options={product.colors}
                         value={color}
                         onChange={value =>
@@ -190,7 +190,7 @@ const Product = React.memo(lazyProps => {
                         optionProps={{
                           showLabel: false,
                         }}
-                      />
+                      /> */}
                     </>
                   ) : (
                     <div>
@@ -210,14 +210,14 @@ const Product = React.memo(lazyProps => {
                         <Label>SIZE: </Label>
                         <Typography>{size.text}</Typography>
                       </Hbox>
-                      <ProductOptionSelector
+                      {/* <ProductOptionSelector
                         options={product.sizes}
                         value={size}
                         strikeThroughDisabled
                         onChange={value =>
                           updateState({ ...state, pageData: { ...state.pageData, size: value } })
                         }
-                      />
+                      /> */}
                     </>
                   ) : (
                     <div>
@@ -273,11 +273,11 @@ const Product = React.memo(lazyProps => {
               <CmsSlot label="Specs">{product.specs}</CmsSlot>
             </TabPanel>
           </Grid>
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <Lazy style={{ minHeight: 285 }}>
               <SuggestedProducts product={product} />
             </Lazy>
-          </Grid>
+          </Grid> */}
         </form>
       </Container>
     </>
