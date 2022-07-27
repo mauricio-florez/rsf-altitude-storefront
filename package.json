@@ -1,12 +1,8 @@
 {
-  "name": "rsf-altitude-storefront",
-  "version": "0.0.0",
-  "private": true,
-  "description": "",
-  "homepage": "",
-  "author": "",
-  "license": "UNLICENSED",
   "scripts": {
+    "layer0:dev": "layer0 dev",
+    "layer0:build": "layer0 build",
+    "layer0:deploy": "layer0 deploy",
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development nodemon server.js",
     "prod": "cross-env NODE_ENV=production node server.js",
@@ -15,6 +11,13 @@
     "deploy": "npm run build && xdn deploy",
     "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\""
   },
+  "name": "rsf-altitude-storefront",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "homepage": "",
+  "author": "",
+  "license": "UNLICENSED",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -43,6 +46,12 @@
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
+    "@layer0/cli": "^4.17.0",
+    "@layer0/core": "^4.17.0",
+    "@layer0/devtools": "^4.17.0",
+    "@layer0/next": "^4.17.0",
+    "@layer0/prefetch": "^4.17.0",
+    "@layer0/react": "^4.17.0",
     "babel-plugin-transform-imports": "^2.0.0",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.2",
