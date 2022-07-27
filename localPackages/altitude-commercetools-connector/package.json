@@ -1,0 +1,88 @@
+{
+  "_from": "rsf-commercetools-connector",
+  "_id": "rsf-commercetools-connector@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-OCWQ+zqN1kRv60s69M0PXC6qbXiOSiW2i9RhwonKdTH9xungeRmtGDdJioS3J+xmq2uyRLHt4G0dZuFSnOv0tQ==",
+  "_location": "/rsf-commercetools-connector",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rsf-commercetools-connector",
+    "name": "rsf-commercetools-connector",
+    "escapedName": "rsf-commercetools-connector",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rsf-commercetools-connector/-/rsf-commercetools-connector-1.0.1.tgz",
+  "_shasum": "8dc53368445a3c1b6fb271e35d9dc1530f6f4c56",
+  "_spec": "rsf-commercetools-connector",
+  "_where": "/Users/mauricioflorez/Projects/react-storefront-starter-app",
+  "author": {
+    "name": "Changecx"
+  },
+  "bugs": {
+    "url": "https://github.com/prasadponnusamy/commercetools-storefront-connector/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "lodash": "^4.17.15"
+  },
+  "deprecated": false,
+  "description": "Commercetools Connector",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.0",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/isomorphic-fetch": "0.0.35",
+    "@types/lodash": "^4.14.155",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "lodash": "^4.17.15",
+    "npm-watch": "^0.6.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.9.5"
+  },
+  "homepage": "https://github.com/prasadponnusamy/commercetools-storefront-connector#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "module": "./src/index.js",
+  "name": "rsf-commercetools-connector",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasadponnusamy/commercetools-storefront-connector.git"
+  },
+  "scripts": {
+    "build": "npm run ts:check && npm run build:prep && NODE_ENV=production npm run build:sources",
+    "build:prep": "npm run clean && cp package.json README.md dist",
+    "build:sources": "babel ./src --source-maps --out-dir dist --extensions \".js,.ts\"",
+    "clean": "mkdir -p dist; cd dist; ls | grep -v 'node_modules\\|package-lock.json' | xargs rm -rf; cd ../;",
+    "push-build": "npm run build && cd dist && yalc push && cd ..",
+    "release": "npm run build && cd dist && npm publish && cd ..",
+    "test": "jest",
+    "ts:check": "tsc",
+    "ts:watch": "tsc --watch",
+    "watch": "npm-watch"
+  },
+  "version": "1.0.1",
+  "watch": {
+    "push-build": {
+      "patterns": [
+        "src"
+      ],
+      "ignore": "*/index.js",
+      "extensions": "js,ts",
+      "quiet": false
+    }
+  }
+}
