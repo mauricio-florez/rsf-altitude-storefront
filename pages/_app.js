@@ -11,6 +11,10 @@ import useJssStyles from 'react-storefront/hooks/useJssStyles'
 import SessionProvider from 'react-storefront/session/SessionProvider'
 import useAppStore from 'react-storefront/hooks/useAppStore'
 
+import { Prefetch } from '@layer0/react'
+import Link from 'next/link'
+import { createNextDataURL } from '@layer0/next/client'
+
 const styles = theme => ({
   main: {
     paddingTop: 3,
@@ -38,6 +42,22 @@ export default function MyApp({ Component, pageProps }) {
           <CssBaseline />
           <Header menu={appData && appData.menu} />
           <NavBar tabs={appData && appData.tabs} />
+          <Link href="/p/a9e8f53f-3a60-4581-8010-cdc173d1d49b" passHref>
+            <Prefetch
+              url={createNextDataURL({
+                href: "/p/a9e8f53f-3a60-4581-8010-cdc173d1d49b",
+                routeParams: {
+                  // keys must match the param names in your next page routes
+                  // So for example if your product page is /products/[productId].js:
+                  productId: "a9e8f53f-3a60-4581-8010-cdc173d1d49b",
+                },
+              })}
+            >
+              <a>
+                CT product - Vans T-shirt
+              </a>
+            </Prefetch>
+          </Link>
           <main className={classes.main}>
             <Component {...pageProps} />
           </main>
