@@ -49,11 +49,9 @@ export default function Header({ menu }) {
     <>
       <AppBar>
         <Container maxWidth="lg" className={classes.container}>
-          <Link href="/">
-            <a>
+          <a href="/" aria-label="Go home">
               <Logo style={{ width: 120, height: 48 }} className={classes.logo} />
-            </a>
-          </Link>
+          </a>
           <Search />
           <CartButton quantity={get(session, 'itemsInCart')} />
           <MenuButton open={menuOpen} onClick={handleMenuButtonClick} />

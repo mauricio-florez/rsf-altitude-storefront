@@ -31,34 +31,18 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <PWA errorReporter={reportError}>
       <Head>
-        {/* <meta
+        <meta
           key="viewport"
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-        /> */}
+        />
       </Head>
       <SessionProvider url="/api/session">
         <MuiThemeProvider theme={theme}>
           <CssBaseline />
           <Header menu={appData && appData.menu} />
-          <NavBar tabs={appData && appData.tabs} />
-          <Link href="/p/a9e8f53f-3a60-4581-8010-cdc173d1d49b" passHref>
-            <Prefetch
-              url={createNextDataURL({
-                href: "/p/a9e8f53f-3a60-4581-8010-cdc173d1d49b",
-                routeParams: {
-                  // keys must match the param names in your next page routes
-                  // So for example if your product page is /products/[productId].js:
-                  productId: "a9e8f53f-3a60-4581-8010-cdc173d1d49b",
-                },
-              })}
-            >
-              <a>
-                CT product - Vans T-shirt
-              </a>
-            </Prefetch>
-          </Link>
           <main className={classes.main}>
+            <a href="/p/a9e8f53f-3a60-4581-8010-cdc173d1d49b">Vans product</a>
             <Component {...pageProps} />
           </main>
         </MuiThemeProvider>
