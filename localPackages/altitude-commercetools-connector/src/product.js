@@ -1,5 +1,7 @@
 import getClient from './utils/client'
+import getContentFulClient from './utils/contentful-client'
 import normalizeProduct from './utils/normalizeProduct'
+import normalizeEntry from './utils/normalizeEntry'
 import createAppData from './utils/createAppData'
 
 import fulfillAPIRequest from 'react-storefront/props/fulfillAPIRequest'
@@ -8,10 +10,11 @@ export default async function product({ id }, req) {
     const { color, size } = req.query
     const client = await getClient(req)
     const raw = await client.getProduct(id, { allImages: true })
-    // const {results=[]} = await client.getCategory(raw.primaryCategoryId)
-    // const category=results.filter(cat=>{return cat.id==raw.masterData.current.categories[0].id}).map(cat =>{ return {id:cat.id,name:cat.name.en}})[0]
+    const contentfulClient = await getContentFulClient()
+    const rawContentfulClient = await contentfulClient.getEntry()
     const normalizedProduct= normalizeProduct(raw.masterData.current, color, size);
-    const pageData= () => getPageData(normalizedProduct);
+    const normalizedEntry= normalizeEntry(rawContentfulClient);
+    const pageData= () => getPageData(normalizedProduct, normalizedEntry);
     const result = await fulfillAPIRequest(req, {
         appData: createAppData,
         pageData,
@@ -19,9 +22,10 @@ export default async function product({ id }, req) {
     return result
 }
 
-async function getPageData(prod, category) {
+async function getPageData(prod, normalizedEntry) {
     const result = {
         title: prod.name,
+        description: prod.description,
         product: prod,
         breadcrumbs: [{
                 text: `Home`,
@@ -33,6 +37,7 @@ async function getPageData(prod, category) {
                 href: '/s/[subcategoryId]',
             },
         ],
+        banner: normalizedEntry
     }
 
     return result

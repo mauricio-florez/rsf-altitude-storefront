@@ -25,6 +25,7 @@ import QuantitySelector from 'react-storefront/QuantitySelector'
 // import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
 import createLazyProps from 'react-storefront/props/createLazyProps'
+import Head from 'next/head'
 
 const fetchVariant = fetchLatest(fetch)
 
@@ -91,6 +92,7 @@ const Product = React.memo(lazyProps => {
     pageData: { quantity: 1, carousel: { index: 0 } },
   })
   const classes = useStyles()
+  const banner = get(state, 'pageData.banner') || {}
   const product = get(state, 'pageData.product') || {}
   const color = get(state, 'pageData.color') || {}
   const size = get(state, 'pageData.size') || {}
@@ -152,8 +154,17 @@ const Product = React.memo(lazyProps => {
 
   return (
     <>
+      {!loading && (
+        <Head>
+          <title>{state.pageData.title}</title>
+          <meta name="description" content={state.pageData.description} />
+        </Head>
+      )}
       <Breadcrumbs items={!loading && state.pageData.breadcrumbs} />
       <Container maxWidth="lg" style={{ paddingTop: theme.spacing(2) }}>
+      {banner?.image && (
+        <img src={banner.image.fields.file.url} alt={banner.fields.title} />
+      )}
         <form onSubmit={handleSubmit} method="post" action-xhr="/api/cart">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={5}>

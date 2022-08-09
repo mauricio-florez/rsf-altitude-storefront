@@ -102,7 +102,7 @@ export default function normalizeProduct(data, color, size) {
   const sizes = getVariationsSize('brandSize1')
   const media = {
     full:[getImages2('mainImage')],
-    thumbnails: []//getImages('medium'),
+    thumbnails: [getImages2('mainImage')]//getImages('medium'),
   }
 
 

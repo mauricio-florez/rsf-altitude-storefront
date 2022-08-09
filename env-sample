@@ -1,0 +1,8 @@
+AUTH_URL=https://auth.us-central1.gcp.commercetools.com
+HOST_URL=https://api.us-central1.gcp.commercetools.com
+CLIENT_ID=<CT-CLIENT-ID>
+CLIENT_SECRET=<CT-CLIENT-SECRET>
+PROJECT_KEY=alti-poc
+CONTENTFUL_HOST_URL=
+CONTENTFUL_SPACE_ID=
+CONTENTFUL_ACCESS_TOKEN=
