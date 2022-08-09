@@ -1,5 +1,5 @@
-import getClient from './utils/client'
-import getCart from './utils/getCart'
+import getClient from './clients/commercetools/commercetools-client'
+import getCart from './clients/commercetools/utils/getCart'
 
 export default async function removeCartItem(item, req, res) {
   const client = getClient(req)

@@ -1,4 +1,4 @@
-import normalizeProduct from './normalizeProduct'
+import normalizeProduct from '../mappers/normalizeProduct'
 
 export default async function getCart(client) {
     //const { productItems, productTotal } = await client.getCart()

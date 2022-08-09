@@ -1,6 +1,6 @@
 import fulfillAPIRequest from 'react-storefront/props/fulfillAPIRequest'
-import createAppData from './utils/createAppData'
-import productListing from './utils/productListing'
+import createAppData from './clients/commercetools/utils/createAppData'
+import productListing from './clients/commercetools/utils/productListing'
 
 export default async function search(params, req) {
   return await fulfillAPIRequest(req, {

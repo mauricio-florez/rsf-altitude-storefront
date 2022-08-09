@@ -1,5 +1,5 @@
-import getClient, { encodeUser } from './utils/client'
-import { COOKIES } from './utils/constants'
+import getClient, { encodeUser } from './clients/commercetools/commercetools-client'
+import { COOKIES } from './clients/commercetools/utils/constants'
 
 export default async function signIn(email, password, req, res) {
   const client = getClient(req)

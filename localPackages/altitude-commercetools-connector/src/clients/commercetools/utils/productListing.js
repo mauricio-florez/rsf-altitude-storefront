@@ -1,5 +1,5 @@
-import getClient from './client'
-import normalizeProduct from './normalizeProduct'
+import getClient from '../commercetools-client'
+import normalizeProduct from '../mappers/normalizeProduct'
 
 // TODO: make process env var
 const limit = 24

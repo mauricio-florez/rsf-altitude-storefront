@@ -1,6 +1,6 @@
 import isEqual from 'lodash/isEqual'
-import getClient from './utils/client'
-import getCart from './utils/getCart'
+import getClient from './clients/commercetools/commercetools-client'
+import getCart from './clients/commercetools/utils/getCart'
 
 export default async function addToCart({ product, quantity, color, size }, req, res) {
   // Fetch and find product with given {color, size} variation values

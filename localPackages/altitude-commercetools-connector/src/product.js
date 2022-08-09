@@ -1,8 +1,8 @@
-import getClient from './utils/client'
-import getContentFulClient from './utils/contentful-client'
-import normalizeProduct from './utils/normalizeProduct'
-import normalizeEntry from './utils/normalizeEntry'
-import createAppData from './utils/createAppData'
+import getClient from './clients/commercetools/commercetools-client'
+import getContentFulClient from './clients/contentful/contentful-client'
+import normalizeProduct from './clients/commercetools/mappers/normalizeProduct'
+import normalizeEntry from './clients/contentful/mappers/normalizeEntry'
+import createAppData from './clients/commercetools/utils/createAppData'
 
 import fulfillAPIRequest from 'react-storefront/props/fulfillAPIRequest'
 

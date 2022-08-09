@@ -1,4 +1,4 @@
-import getClient from './utils/client'
+import getClient from './clients/commercetools/commercetools-client'
 
 // Fetches the page and API paths for all categories and a few product from each specified by the given options
 export default async function getPrerenderUrls(options = { offset: 0, limit: 10 }) {
