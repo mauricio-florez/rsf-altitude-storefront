@@ -31,7 +31,11 @@ HOST_URL=https://api.<region>.gcp.commercetools.com
 CLIENT_ID=NndsderS5TPE6
 CLIENT_SECRET=4srJ3nJF8sda234dsdSDArgKH-SDEY
 PROJECT_KEY=<commercetools-project-id>
+CONTENTFUL_HOST_URL=
+CONTENTFUL_SPACE_ID=
+CONTENTFUL_ACCESS_TOKEN=
 ```
+*Note:* Check the `envsample` file
 
 Finally set the connector in your `next.config.js` file. By default this file is set to use the `react-storefront/mock-connector` as shown below:
 
