@@ -1,4 +1,4 @@
-import getClient from './client'
+import getClient from '../commercetools-client'
 
 export default async function createAppData(req) {
     const client = await getClient(req)

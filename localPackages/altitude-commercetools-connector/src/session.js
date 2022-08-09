@@ -1,6 +1,6 @@
-import getClient, { encodeUser } from './utils/client'
-import { COOKIES } from './utils/constants'
-import getCart from './utils/getCart'
+import getClient, { encodeUser } from './clients/commercetools/commercetools-client'
+import { COOKIES } from './clients/commercetools/utils/constants'
+import getCart from './clients/commercetools/utils/getCart'
 
 export default async function session(req, res) {
   const client = await getClient(req)

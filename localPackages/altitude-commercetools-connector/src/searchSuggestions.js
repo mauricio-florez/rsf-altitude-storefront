@@ -1,6 +1,6 @@
 import get from 'lodash/get'
-import getClient from './utils/client'
-import normalizeProduct from './utils/normalizeProduct'
+import getClient from './clients/commercetools/commercetools-client'
+import normalizeProduct from './clients/commercetools/mappers/normalizeProduct'
 
 export default async function searchSuggestions(q, req, res) {
     // Query has a length constraint (3...50)

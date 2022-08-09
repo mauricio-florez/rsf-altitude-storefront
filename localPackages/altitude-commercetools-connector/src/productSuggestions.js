@@ -1,5 +1,5 @@
-import getClient from './utils/client'
-import normalizeProduct from './utils/normalizeProduct'
+import getClient from './clients/commercetools/commercetools-client'
+import normalizeProduct from './clients/commercetools/mappers/normalizeProduct'
 
 export default async function productSuggestions(id, req, res) {
   const client = await getClient(req, res)

@@ -1,7 +1,7 @@
 import fulfillAPIRequest from 'react-storefront/props/fulfillAPIRequest'
-import getClient from './utils/client'
-import createAppData from './utils/createAppData'
-import productListing from './utils/productListing'
+import getClient from './clients/commercetools/commercetools-client'
+import createAppData from './clients/commercetools/utils/createAppData'
+import productListing from './clients/commercetools/utils/productListing'
 
 export default async function subcategory(params, req) {
     return await fulfillAPIRequest(req, {

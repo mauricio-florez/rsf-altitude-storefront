@@ -1,4 +1,4 @@
-import getClient from './utils/client'
+import getClient from './clients/commercetools/commercetools-client'
 
 export default async function signUp(data, req, res) {
   const client = getClient(req)
