@@ -19,7 +19,88 @@ export default function getContentFulClient(req) {
         return response
     }
 
+    let _categoryTree;
+    const getCategoryTree = async () => {
+        // We want to load the collection tree only once the first time
+        // we load the application. Keep it cached after.
+        if(!_categoryTree){
+            const {data} = await Axios.post(`https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`, {
+                query: `query {
+                    categoryCollection {
+                        items {
+                            sys { id }
+                            nameFr: name(locale: "fr-CA")
+                            nameEn: name(locale: "en-US")
+                            slug
+                            parentCategoriesCollection{
+                                items{
+                                    sys { id }
+                                }
+                            }
+                        }
+                    }
+                }`
+            })
+
+            console.log(JSON.stringify(items, null, 2))
+        
+            const categories = [];
+
+            for(const category of data.data.categoryCollection.items){
+                const baseCategory = {
+                    id: category.sys.id,
+                    name: {
+                      fr: category.nameFr,
+                      en: category.nameEn
+                    },
+                    slug: category.slug,
+                }
+
+
+              if(category.parentCategoriesCollection.items.length === 0){
+                categories.push(baseCategory)
+              }else {
+                for(const parentCategory of category.parentCategoriesCollection.items){
+                    categories.push({
+                        ...baseCategory,
+                        parentId: parentCategory.sys.id
+                    })
+                }
+              }
+            }
+
+            _categoryTree = arrayToTree(cleanCategory, {dataField: null})
+        }
+
+
+        return _categoryTree;
+    }
+
+    let _collectionPaths = new Map();
+    const getCollectionPaths = async () => {
+        if(_collectionPaths.size === 0){
+            const tree = await getCategoryTree();
+
+            const recursivelyProcessChildren = (c, parentPath = '') => {
+                for(const category of c){
+                    const path = `${parentPath}/${category.slug}`;
+                    collection.set(path, category);
+                    
+                    if(category.children?.length > 0){
+                        recursivelyProcessChildren(category.children, path)
+                    }
+                }
+            }
+
+            recursivelyProcessChildren(tree)
+        }
+
+        return _collectionPaths;
+    }
+
     return {
         getEntry,
+        getCategoryTree,
+        getCollectionPaths,
     }
 }
