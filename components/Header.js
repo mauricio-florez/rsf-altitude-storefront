@@ -9,7 +9,10 @@ import Menu from 'react-storefront/menu/Menu'
 import MenuButton from 'react-storefront/menu/MenuButton'
 import Link from 'react-storefront/link/Link'
 import SessionContext from 'react-storefront/session/SessionContext'
+import useAppStore from 'react-storefront/hooks/useAppStore'
 import get from 'lodash/get'
+import {Box} from '@material-ui/core'
+//import {getContentFulClient} from '../localPackages/altitude-commercetools-connector/src/clients/contentful/contentful-client'
 
 const useStyles = makeStyles(theme => ({
   title: {},
@@ -38,12 +41,16 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function Header({ menu }) {
+export default function Header({ menu, categoryTree }) {
   const classes = useStyles()
   const [menuOpen, setMenuOpen] = useState(false)
   const handleMenuClose = useCallback(() => setMenuOpen(false), [])
   const handleMenuButtonClick = useCallback(() => setMenuOpen(menuOpen => !menuOpen), [])
   const { session } = useContext(SessionContext)
+
+
+  //const categoryTree = getContentFulClient().getCategoryTree();
+
 
   return (
     <>
@@ -57,6 +64,30 @@ export default function Header({ menu }) {
           <MenuButton open={menuOpen} onClick={handleMenuButtonClick} />
         </Container>
       </AppBar>
+
+      {categoryTree && (
+        <Container>
+          <Box sx={{display: 'flex', flexDirection: 'row'}}>
+            {categoryTree.map(c => (
+              <Box key={c.id} sx={{mr: 2}}>
+                <Link href={`/categories/${c.slug}`}>
+                  <a style={{fontWeight: '900'}}>{c.name.en}</a>
+                </Link>
+                
+                {c.children && c.children.map(cc => (
+                  <Box key={cc.id}>
+                    <Link href={`/categories/${c.slug}/${cc.slug}`}>
+                      <a>&#x21b3; {cc.name.en}</a>
+                    </Link>
+                    
+                  </Box>
+                ))}
+              </Box>
+            ))}
+          </Box>
+        </Container>
+      )}
+
       <Menu
         anchor="right"
         root={menu}

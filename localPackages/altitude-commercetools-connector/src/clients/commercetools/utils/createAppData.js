@@ -1,4 +1,5 @@
 import getClient from '../commercetools-client'
+import getContentFulClient from '../../contentful/contentful-client'
 
 export default async function createAppData(req) {
     const client = await getClient(req)
@@ -33,5 +34,7 @@ export default async function createAppData(req) {
         return tab
     })
 
-    return Promise.resolve({ menu: { items: tabs }, tabs })
+    const categoryTree = await getContentFulClient().getCategoryTree();
+
+    return Promise.resolve({ categoryTree, menu: { items: tabs }, tabs })
 }

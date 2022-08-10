@@ -1,4 +1,6 @@
 import { spaceId, accessToken } from "./config/config.js"
+import Axios from 'axios'
+import {arrayToTree} from 'performant-array-to-tree';
 const contentful = require("contentful");
 
 export default function getContentFulClient(req) {
@@ -42,8 +44,6 @@ export default function getContentFulClient(req) {
                 }`
             })
 
-            console.log(JSON.stringify(items, null, 2))
-        
             const categories = [];
 
             for(const category of data.data.categoryCollection.items){
@@ -57,7 +57,7 @@ export default function getContentFulClient(req) {
                 }
 
 
-              if(category.parentCategoriesCollection.items.length === 0){
+              if(category.parentCategoriesCollection.items.length === 0){ 
                 categories.push(baseCategory)
               }else {
                 for(const parentCategory of category.parentCategoriesCollection.items){
@@ -69,7 +69,9 @@ export default function getContentFulClient(req) {
               }
             }
 
-            _categoryTree = arrayToTree(cleanCategory, {dataField: null})
+            _categoryTree = arrayToTree(categories, {dataField: null})
+            
+        console.log(_categoryTree)
         }
 
 
@@ -86,7 +88,7 @@ export default function getContentFulClient(req) {
                     const path = `${parentPath}/${category.slug}`;
                     collection.set(path, category);
                     
-                    if(category.children?.length > 0){
+                    if(category.children && category.children.length > 0){
                         recursivelyProcessChildren(category.children, path)
                     }
                 }
