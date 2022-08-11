@@ -34,3 +34,6 @@ export { default as signOut }
 from './signOut.js'
 export { default as getPrerenderUrls }
 from './getPrerenderUrls.js'
+
+export { default as category }
+from './category.js'
