@@ -28,3 +28,19 @@ You can get a better sense of the speed of React Storefront by running a product
 ```
 npm run build && npm run prod
 ```
+
+# Troubleshooting
+
+```bash
+Defining routes from exportPathMap
+> Using connector altitude-commercetools-connector
+node:internal/crypto/hash:67
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+```
+
+Run 
+`export NODE_OPTIONS=--openssl-legacy-provider` 
+then `npm run dev`
