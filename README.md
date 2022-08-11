@@ -9,6 +9,8 @@ npm i
 npm run dev
 ```
 
+Ask for the .env file content
+
 Using Layer-0
 
 ```
