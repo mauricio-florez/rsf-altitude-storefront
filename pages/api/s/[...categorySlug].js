@@ -1,4 +1,12 @@
-import { subcategory } from 'react-storefront-connector'
+import { category } from 'react-storefront-connector'
+
+export default async function plp(req, res) {
+  const result = await category({}, req, res)
+  return res.json(result)
+}
+
+
+/* import { subcategory } from 'react-storefront-connector'
 
 export default async function plp(req, res) {
   // Note: the structure of the query string is controlled by the queryForState prop passed
@@ -25,4 +33,4 @@ export default async function plp(req, res) {
       res
     )
   )
-}
+} */

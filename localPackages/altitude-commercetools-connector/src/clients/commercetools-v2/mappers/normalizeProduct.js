@@ -107,7 +107,7 @@ export default function normalizeProduct(data, color, size) {
 
 
   data['price']= 100;// (data.masterVariant.prices[0].value.centAmount)/100 || 100;
-  const id = data.id;
+  const id = data.id;// data.id || data.productId || 12321;
   const specs = {}  
   return {
     id,
