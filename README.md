@@ -42,5 +42,4 @@ Error: error:0308010C:digital envelope routines::unsupported
 ```
 
 Run 
-`export NODE_OPTIONS=--openssl-legacy-provider` 
-then `npm run dev`
+`NODE_OPTIONS=--openssl-legacy-provider npm run dev` 
