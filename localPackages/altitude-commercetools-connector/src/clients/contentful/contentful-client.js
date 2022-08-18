@@ -67,7 +67,7 @@ export default function getContentFulClient(req) {
             }
         }
 
-        _categoryTree = arrayToTree(categories, {dataField: null})
+        let _categoryTree = arrayToTree(categories, {dataField: null})
 
         console.log(_categoryTree)
         return _categoryTree;
