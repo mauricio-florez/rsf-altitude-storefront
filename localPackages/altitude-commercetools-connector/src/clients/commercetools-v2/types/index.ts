@@ -1,3 +1,5 @@
+import { PlpFacetType } from "./facets"
+
 // TODO: Add product type
 export type product = {}
 
@@ -9,5 +11,5 @@ export type PlpResponse = {
     // sort,
     sortOptions: any[],
     filters: any[],
-    facets: any[]
+    facets: PlpFacetType[]
 }

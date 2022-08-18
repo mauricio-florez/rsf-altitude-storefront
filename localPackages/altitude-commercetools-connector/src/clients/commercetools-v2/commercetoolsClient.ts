@@ -14,10 +14,11 @@ const getProductsByCategoryId = async ({ req= {}, params= {}, categoryId='' }): 
     const { body: search } = await apiRoot
       .withProjectKey({ projectKey })
       .productProjections()
+      .search()
       .get({
         queryArgs: {
-          facet: [],
-          filter: [`categories.id:${categoryId}`],
+          facet: ['variants.attributes.vendorTitle', 'variants.attributes.test'], // TODO: do not hardcode
+          filter: [`categories.id:"${categoryId}"`],
           "filter.query": []
         }
       })
