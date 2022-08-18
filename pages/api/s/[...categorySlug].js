@@ -5,7 +5,7 @@ export default async function plp(req, res) {
   return res.json(result)
 }
 
-
+// TODO use this commented code as reference for filtering/faceting implementation
 /* import { subcategory } from 'react-storefront-connector'
 
 export default async function plp(req, res) {
