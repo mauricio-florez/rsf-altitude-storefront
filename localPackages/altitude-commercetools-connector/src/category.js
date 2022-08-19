@@ -11,17 +11,20 @@ export default async function category(params, req, res) {
 
 async function getPageData(params, req) {
   const lang = "en-CA"
-  const { filters = '[]' } = params
+
+  const filterKey = Object.keys(req.query).find(k => k.includes('variants.attributes'))
+  const filterQuery = filterKey && `${filterKey}:${req.query[filterKey]}` || ''
+
   const { categorySlug } = req.query
   const { body: category } = await getCategoryById({ categoryId: categorySlug[0] })
-  const plp = await getProductsByCategoryId({ categoryId: categorySlug[0] })
+  const plp = await getProductsByCategoryId({ categoryId: categorySlug[0], filterQuery })
 
   // collect all page data
   return {
       id: category.id,
       name: category.name[lang],
       title:category.name[lang],
-      breadcrumbs: 
+      breadcrumbs:
       [{
               text: 'Home',
               href: '/',
@@ -33,5 +36,5 @@ async function getPageData(params, req) {
       ],
       ...plp,
   }
- 
+
 }

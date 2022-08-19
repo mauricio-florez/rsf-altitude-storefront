@@ -25,6 +25,7 @@ type PlpFacetOptionsType = {
 type PlpFacetType = {
   name: string;
   options: PlpFacetOptionsType[];
+  ui?: "buttons"|"checkboxes";
 }
 
 export {
