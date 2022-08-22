@@ -38,7 +38,8 @@ const createQueryWith = ({categoryId='', filterQuery=''}: CreateQueryType) => {
 }
 
 const getCategoryById = ({ categoryId }) => {
-  return apiRoot
+  try {
+    return apiRoot
     .withProjectKey({ projectKey })
     .categories()
     .withId({
@@ -46,6 +47,9 @@ const getCategoryById = ({ categoryId }) => {
     })
     .get()
     .execute();
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 export {

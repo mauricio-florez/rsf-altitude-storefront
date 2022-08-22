@@ -98,7 +98,7 @@ export default function normalizeProduct(data, color, size) {
      }
     }
   }
-  // const colors: {} = getVariationsColor()
+
   const sizes = getVariationsSize('brandSize1')
   const media = {
     full:[getImages2('mainImage')],
@@ -106,13 +106,13 @@ export default function normalizeProduct(data, color, size) {
   }
 
 
-  data['price']= 100;// (data.masterVariant.prices[0].value.centAmount)/100 || 100;
-  const id = data.id;// data.id || data.productId || 12321;
+  data['price']= 100;// TODO: get real price from selected or master variant
+  const id = data.id;
   const specs = {}  
   return {
     id,
     url: `/p/${id}`,
-    name: data.name['en-CA'],//|| data.productName,
+    name: data.name['en-CA'],
     price: data.price,
     priceText: `$${data.price}.00`, // n/a
     // rating: n/a

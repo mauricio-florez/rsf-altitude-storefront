@@ -4,13 +4,17 @@ import { normalizeFacets } from './normalizeFacets'
 import normalizeProduct from './normalizeProduct'
 
 export function normalizePlp(search): PlpResponse {
+  // TODO: Limit needs to be a config param
   const limit = 24
+  // TODO: Check logic in client side, it is adding an additional page
   const totalPages = Math.ceil(search.total / limit) + 1
+
+  const { results = [] } = search
   let products = []
   const facets: FacetResponseType = search.facets || {}
 
-  if (search.results.length > 0) {
-    products = search.results
+  if (results.length > 0) {
+      products = results
   }
 
   return {

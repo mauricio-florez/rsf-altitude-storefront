@@ -6,7 +6,6 @@ import { Skeleton } from '@material-ui/lab'
 import { Hbox } from 'react-storefront/Box'
 import Breadcrumbs from 'react-storefront/Breadcrumbs'
 import LoadMask from 'react-storefront/LoadMask'
-
 // compoenents
 import ResponsiveTiles from 'react-storefront/ResponsiveTiles'
 import ProductItem from '../../components/product/ProductItem'
@@ -17,14 +16,10 @@ import SearchResultsProvider from 'react-storefront/plp/SearchResultsProvider'
 import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 import FilterButton from 'react-storefront/plp/FilterButton'
 import SortButton from 'react-storefront/plp/SortButton'
-
 // SEO
 import Head from 'next/head'
-
-
 // HOOK
 import useSearchResultsStore from 'react-storefront/plp/useSearchResultsStore'
-
 // API
 import Fill from 'react-storefront/Fill'
 import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
@@ -188,15 +183,6 @@ const Subcategory = lazyProps => {
                               <Skeleton variant="rect" />
                             </Fill>
                             <Skeleton height={26} />
-                            {/* <ProductOptionSelector
-                              skeleton={4}
-                              variant="swatch"
-                              size="small"
-                              optionProps={{
-                                size: 'small',
-                                showLabel: false,
-                              }}
-                            /> */}
                             <Skeleton height={18} />
                             <Skeleton height={24} style={{ marginTop: '5px' }} />
                           </div>
