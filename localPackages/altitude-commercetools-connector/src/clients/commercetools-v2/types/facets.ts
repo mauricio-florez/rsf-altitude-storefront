@@ -7,7 +7,7 @@ type FacetType = {
   dataType: string;
   missing: number;
   total: number;
-  other: 0;
+  other: number;
   terms: FacetTermType[];
 }
 
