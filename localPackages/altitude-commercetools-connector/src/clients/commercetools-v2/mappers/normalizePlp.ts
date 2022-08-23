@@ -1,4 +1,6 @@
+import { FacetResponseType } from '../types/facets'
 import { type PlpResponse } from './../types/index'
+import { normalizeFacets } from './normalizeFacets'
 import normalizeProduct from './normalizeProduct'
 
 export function normalizePlp(search): PlpResponse {
@@ -9,6 +11,7 @@ export function normalizePlp(search): PlpResponse {
 
   const { results = [] } = search
   let products = []
+  const facets: FacetResponseType = search.facets || {}
 
   if (results.length > 0) {
       products = results
@@ -22,6 +25,6 @@ export function normalizePlp(search): PlpResponse {
     // sort,
     sortOptions: [],
     filters: [],
-    facets: []
+    facets: normalizeFacets(facets),
   }
 }

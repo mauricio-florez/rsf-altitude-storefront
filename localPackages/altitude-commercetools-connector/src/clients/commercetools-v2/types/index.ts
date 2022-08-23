@@ -1,7 +1,9 @@
-// TODO: Add product type
-export type product = {}
+import { PlpFacetType } from "./facets"
 
-export type PlpResponse = {
+// TODO: Add product type
+type product = {}
+
+type PlpResponse = {
     total: number,
     // page,
     totalPages: number,
@@ -9,5 +11,28 @@ export type PlpResponse = {
     // sort,
     sortOptions: any[],
     filters: any[],
-    facets: any[]
+    facets: PlpFacetType[]
+}
+
+type ProductsByCategoryIdRequestType = {
+    req: {
+        [x: string]: any;
+    };
+    params: {
+        [x: string]: string;
+    }
+    filterQuery: string;
+    categoryId: string;
+}
+
+type CreateQueryType = {
+    categoryId: string;
+    filterQuery: string
+}
+
+export {
+    product,
+    PlpResponse,
+    ProductsByCategoryIdRequestType,
+    CreateQueryType,
 }

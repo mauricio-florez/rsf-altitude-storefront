@@ -55,7 +55,7 @@ export default function getContentFulClient(req) {
             }
 
 
-            if(category.parentCategoriesCollection.items.length === 0){ 
+            if(category.parentCategoriesCollection.items.length === 0){
             categories.push(baseCategory)
             }else {
             for(const parentCategory of category.parentCategoriesCollection.items){
@@ -79,9 +79,9 @@ export default function getContentFulClient(req) {
 
             const recursivelyProcessChildren = (c, parentPath = '') => {
                 for(const category of c){
-                    const path = `${parentPath}/${category.slug}`;
+                    const path = `${parentPath}/${category.slug}&facets=${category.facets}`;
                     collection.set(path, category);
-                    
+
                     if(category.children && category.children.length > 0){
                         recursivelyProcessChildren(category.children, path)
                     }
