@@ -7,7 +7,6 @@ import Rating from 'react-storefront/Rating'
 import ForwardThumbnail from 'react-storefront/ForwardThumbnail'
 import Image from 'react-storefront/Image'
 import clsx from 'clsx'
-import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -71,17 +70,6 @@ function ProductItem({ product, index, classes, className, colorSelector }) {
           <Typography variant="subtitle1" className={classes.name}>
             {product.name}
           </Typography>
-          {/* {colorSelector && (
-            <ProductOptionSelector
-              options={store.colors}
-              value={store.color}
-              onChange={value => updateStore({ ...store, color: value })}
-              optionProps={{
-                size: 'small',
-                showLabel: false,
-              }}
-            />
-          )} */}
           <Rating product={product} className={classes.rating} />
           <Typography className={classes.price}>{product.price}</Typography>
         </div>

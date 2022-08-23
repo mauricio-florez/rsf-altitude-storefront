@@ -40,9 +40,8 @@ export default function MyApp({ Component, pageProps }) {
       <SessionProvider url="/api/session">
         <MuiThemeProvider theme={theme}>
           <CssBaseline />
-          <Header menu={appData && appData.menu} />
+          <Header menu={appData && appData.menu} categoryTree={appData && appData.categoryTree} />
           <main className={classes.main}>
-            <a href="/p/a9e8f53f-3a60-4581-8010-cdc173d1d49b">Vans product</a>
             <Component {...pageProps} />
           </main>
         </MuiThemeProvider>
