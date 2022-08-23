@@ -1,4 +1,10 @@
 {
+  "name": "rsf-altitude-storefront",
+  "description": "Altitude Sports: React Storefront",
+  "author": "Altitude Sports",
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "layer0:dev": "layer0 dev",
     "layer0:build": "layer0 build",
@@ -11,52 +17,45 @@
     "deploy": "npm run build && xdn deploy",
     "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\""
   },
-  "name": "rsf-altitude-storefront",
-  "version": "0.0.0",
-  "private": true,
-  "description": "",
-  "homepage": "",
-  "author": "",
-  "license": "UNLICENSED",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "@material-ui/core": "4.11.2",
     "@material-ui/icons": "4.11.2",
     "@material-ui/lab": "4.0.0-alpha.57",
     "@material-ui/styles": "4.11.2",
-    "@svgr/webpack": "^4.3.3",
+    "@svgr/webpack": "4.3.3",
     "altitude-commercetools-connector": "file:localPackages/altitude-commercetools-connector",
-    "clsx": "^1.0.4",
-    "contentful": "^9.1.33",
-    "cross-env": "^5.2.0",
-    "isomorphic-unfetch": "^3.0.0",
-    "lorem-ipsum": "^2.0.3",
-    "module-alias": "^2.2.1",
-    "next": "^10.0.3",
+    "clsx": "1.0.4",
+    "contentful": "9.1.33",
+    "cross-env": "5.2.0",
+    "isomorphic-unfetch": "3.0.0",
+    "lorem-ipsum": "2.0.3",
+    "module-alias": "2.2.1",
+    "next": "10.0.3",
     "preact": "10.1.0",
-    "preact-render-to-string": "^5.1.2",
-    "preact-ssr-prepass": "^1.0.0",
-    "qs": "^6.9.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-storefront": "^8.17.4",
-    "react-visibility-sensor": "^5.1.1"
+    "preact-render-to-string": "5.1.2",
+    "preact-ssr-prepass": "1.0.0",
+    "qs": "6.9.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-storefront": "8.17.4",
+    "react-visibility-sensor": "5.1.1"
   },
   "devDependencies": {
-    "@layer0/cli": "^4.17.0",
-    "@layer0/core": "^4.17.0",
-    "@layer0/devtools": "^4.17.0",
-    "@layer0/next": "^4.17.0",
-    "@layer0/prefetch": "^4.17.0",
-    "@layer0/react": "^4.17.0",
-    "babel-plugin-transform-imports": "^2.0.0",
-    "dotenv": "^8.2.0",
-    "nodemon": "^2.0.2",
-    "prettier": "^1.19.1"
+    "@layer0/cli": "4.17.0",
+    "@layer0/core": "4.17.0",
+    "@layer0/devtools": "4.17.0",
+    "@layer0/next": "4.17.0",
+    "@layer0/prefetch": "4.17.0",
+    "@layer0/react": "4.17.0",
+    "babel-plugin-transform-imports": "2.0.0",
+    "dotenv": "8.2.0",
+    "nodemon": "2.0.2",
+    "prettier": "1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": [
