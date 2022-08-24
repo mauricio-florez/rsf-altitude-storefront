@@ -20,7 +20,7 @@ const _preLayer0Export = withReactStorefront({
       test: /\.(ts)x?$/,
       use: [
         {
-          loader: "ts-loader",
+          loader: 'ts-loader',
           options: {
             transpileOnly: true,
             experimentalWatchApi: true,
@@ -28,10 +28,10 @@ const _preLayer0Export = withReactStorefront({
           },
         },
       ],
-    });
+    })
     return config
   },
-});;
+})
 
 module.exports = (phase, config) =>
   withLayer0(
@@ -40,6 +40,6 @@ module.exports = (phase, config) =>
       // the logs in the Layer0 developer console.
       layer0SourceMaps: true,
 
-      ..._preLayer0Export
+      ..._preLayer0Export,
     })
   )

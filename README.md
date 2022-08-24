@@ -39,6 +39,8 @@ npm i
 npm run dev
 ```
 
+Ask for the .env file content
+
 Using Layer-0
 
 ```
@@ -63,3 +65,18 @@ Using layer-0
 ```
 layer0 build && layer0 run --production
 ```
+
+# Troubleshooting
+
+```bash
+Defining routes from exportPathMap
+> Using connector altitude-commercetools-connector
+node:internal/crypto/hash:67
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+```
+
+Run 
+`NODE_OPTIONS=--openssl-legacy-provider npm run dev` 

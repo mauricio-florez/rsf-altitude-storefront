@@ -162,9 +162,7 @@ const Product = React.memo(lazyProps => {
       )}
       <Breadcrumbs items={!loading && state.pageData.breadcrumbs} />
       <Container maxWidth="lg" style={{ paddingTop: theme.spacing(2) }}>
-      {banner?.image && (
-        <img src={banner.image.fields.file.url} alt={banner.fields.title} />
-      )}
+        {banner?.image && <img src={banner.image.fields.file.url} alt={banner.fields.title} />}
         <form onSubmit={handleSubmit} method="post" action-xhr="/api/cart">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={5}>
