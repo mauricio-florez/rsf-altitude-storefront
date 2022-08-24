@@ -6,7 +6,7 @@ import CmsSlot from 'react-storefront/CmsSlot'
 import LoadMask from 'react-storefront/LoadMask'
 import Head from 'next/head'
 import createLazyProps from 'react-storefront/props/createLazyProps'
-import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
+import customFetchFromAPI from './utils/customFetchFromAPI'
 
 const useStyles = makeStyles(theme => ({
   main: {
@@ -48,5 +48,5 @@ export default function Index(lazyProps) {
 Index.getInitialProps = createLazyProps(options => {
   const { res } = options
   if (res) res.setHeader('Cache-Control', 'max-age=99999')
-  return fetchFromAPI(options)
+  return customFetchFromAPI(options)
 })
