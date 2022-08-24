@@ -1,7 +1,7 @@
 const fs = require('fs')
 const styleDictionaryPackage = require('style-dictionary')
 
-const brand = process.env.BRAND
+const brand = process.env.BRAND || 'vallier'
 const buildDirectoryPath = 'build/'
 
 const cleanBuildFolder = (path) => {
