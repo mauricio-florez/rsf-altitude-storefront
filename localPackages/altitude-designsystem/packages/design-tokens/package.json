@@ -5,7 +5,11 @@
   "license": "UNLICENSED",
   "version": "0.0.0",
   "private": true,
-  "main": "index.js",
+  "main": "build/index.js",
+  "files": [
+    "build/index.scss",
+    "build/index.js"
+  ],
   "scripts": {
     "build": "npm run build:clean && npm run build:exec",
     "build:exec": "node scripts/build.js",

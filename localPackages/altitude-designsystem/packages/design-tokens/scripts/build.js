@@ -1,9 +1,8 @@
 const fs = require('fs')
-const path = require('path')
 const styleDictionaryPackage = require('style-dictionary')
 
 const brand = process.env.BRAND
-const buildDirectoryPath = path.resolve(__dirname, '../build')
+const buildDirectoryPath = 'build/'
 
 const cleanBuildFolder = (path) => {
   if (fs.existsSync(path)) {
@@ -21,9 +20,20 @@ const getStyleDictionaryConfig = (brand) => {
       './src/tiers/component/*.json'
     ],
     platforms: {
-      web: {
+      css: {
+        transformGroup: 'css',
+        buildPath: buildDirectoryPath,
+        files: [{
+          destination: 'index.scss',
+          format: 'scss/variables',
+          options: {
+            showFileHeader: false
+          }
+        }]
+      },
+      js: {
         transformGroup: 'js',
-        buildPath: `${buildDirectoryPath}/`,
+        buildPath: buildDirectoryPath,
         files: [{
           destination: 'index.js',
           format: 'javascript/module',

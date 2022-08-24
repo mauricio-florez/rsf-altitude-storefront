@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "version": "0.0.0",
   "private": true,
-  "main": "index.js",
+  "main": "packages/index.js",
   "scripts": {
     "all:install:clean": "npm run packages:install:clean && npm run designsystem:install:clean",
     "all:install": "npm run designsystem:install && npm run packages:install",

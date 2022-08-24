@@ -1,3 +1,3 @@
-const Tokens = require('./design-tokens')
+const designTokens = require('./design-tokens')
 
-module.exports = { Tokens }
+module.exports = { designTokens }
