@@ -1,3 +1,3 @@
 export const COOKIES = {
-    USER: 'ct_customer',
+  USER: 'ct_customer',
 }
