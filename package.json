@@ -9,6 +9,7 @@
     "layer0:dev": "layer0 dev",
     "layer0:build": "layer0 build",
     "layer0:deploy": "layer0 deploy",
+    "preinstall": "npm --prefix localPackages/altitude-designsystem run all:install",
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development nodemon server.js",
     "prod": "cross-env NODE_ENV=production node server.js",
@@ -24,6 +25,7 @@
     "@material-ui/styles": "4.11.2",
     "@svgr/webpack": "4.3.3",
     "altitude-commercetools-connector": "file:localPackages/altitude-commercetools-connector",
+    "altitude-designsystem": "file:localPackages/altitude-designsystem",
     "clsx": "1.0.4",
     "contentful": "9.1.33",
     "cross-env": "5.2.0",
@@ -50,6 +52,7 @@
     "babel-plugin-transform-imports": "2.0.0",
     "dotenv": "8.2.0",
     "nodemon": "2.0.2",
+    "npm-commands": "1.1.0",
     "prettier": "1.19.1"
   },
   "nodemonConfig": {

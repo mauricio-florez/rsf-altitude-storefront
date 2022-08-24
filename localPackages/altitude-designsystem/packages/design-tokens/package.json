@@ -3,9 +3,9 @@
   "description": "The Altitude Design System: Design Tokens package",
   "author": "Altitude Sports",
   "license": "UNLICENSED",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
-  "main": "build/index.esm.js",
+  "main": "index.js",
   "scripts": {
     "build": "npm run build:clean && npm run build:exec",
     "build:exec": "node scripts/build.js",

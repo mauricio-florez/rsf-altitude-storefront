@@ -23,10 +23,10 @@ const getStyleDictionaryConfig = (brand) => {
     platforms: {
       web: {
         transformGroup: 'js',
-        buildPath: `${buildDirectoryPath}/web/`,
+        buildPath: `${buildDirectoryPath}/`,
         files: [{
-          destination: 'index.esm.js',
-          format: 'javascript/es6',
+          destination: 'index.js',
+          format: 'javascript/module',
           options: {
             showFileHeader: false
           }

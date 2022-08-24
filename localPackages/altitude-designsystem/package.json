@@ -3,11 +3,11 @@
   "description": "The Altitude Sports Design System",
   "author": "Altitude Sports",
   "license": "UNLICENSED",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
-  "main": "index.esm.js",
+  "main": "index.js",
   "scripts": {
-    "all:install:clean": "npm run designsystem:install:clean && npm run packages:install:clean",
+    "all:install:clean": "npm run packages:install:clean && npm run designsystem:install:clean",
     "all:install": "npm run designsystem:install && npm run packages:install",
     "all:update": "npm run designsystem:update && npm run packages:update",
     "packages:build": "lerna run build",
@@ -24,7 +24,6 @@
     "designsystem:update": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "esm": "3.2.25",
-    "lerna": "5.4.3"
+    "lerna": "4.0.0"
   }
 }

@@ -1,9 +1,10 @@
-require('dotenv').config()
-
-const webpack = require('webpack')
-const npm = require('npm-commands')
 const { withLayer0, withServiceWorker } = require('@layer0/next/config')
+
+const npm = require('npm-commands')
+const webpack = require('webpack')
 const withReactStorefront = require('react-storefront/plugins/withReactStorefront')
+
+require('dotenv').config()
 
 const _preLayer0Export = withReactStorefront({
   target: 'serverless',
