@@ -5,17 +5,17 @@ import normalizeProduct from '../mappers/normalizeProduct'
 const limit = 24
 
 export default async function productListing(req, params, catId) {
-   
-    const { page = 1, filters = '[]', sort } = params   
 
-    const client = await getClient(req)     
-    const search = await client.findProducts(catId)       
-   
-    let products = []      
+    const { page = 1, filters = '[]', sort } = params
+
+    const client = await getClient(req)
+    const search = await client.findProducts(catId)
+
+    let products = []
     if (search.results) {
         products = search.results
     }
-    
+
     const totalPages = 1 //Math.ceil(search.total / limit) + 1
 
     // collect all page data

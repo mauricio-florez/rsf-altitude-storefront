@@ -1,0 +1,37 @@
+type FacetResponseType = {
+  [k: string]: FacetType;
+}
+
+type FacetType = {
+  type: string;
+  dataType: string;
+  missing: number;
+  total: number;
+  other: number;
+  terms: FacetTermType[];
+}
+
+type FacetTermType = {
+  term: string;
+  count: number;
+}
+
+type PlpFacetOptionsType = {
+  code: string;
+  name: string;
+  matches: number;
+}
+
+type PlpFacetType = {
+  name: string;
+  options: PlpFacetOptionsType[];
+  ui?: "buttons"|"checkboxes";
+}
+
+export {
+  FacetResponseType,
+  FacetType,
+  FacetTermType,
+  PlpFacetType,
+  PlpFacetOptionsType,
+}

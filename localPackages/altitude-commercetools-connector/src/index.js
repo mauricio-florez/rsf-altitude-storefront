@@ -26,6 +26,8 @@ export { default as session }
 from './session.js'
 export { default as subcategory }
 from './subcategory.js'
+export { default as category }
+from './category.js'
 export { default as signUp }
 from './signUp.js'
 export { default as signIn }
