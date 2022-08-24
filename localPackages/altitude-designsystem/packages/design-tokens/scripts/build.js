@@ -1,9 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-
 const styleDictionaryPackage = require('style-dictionary')
-
-require('dotenv').config()
 
 const brand = process.env.BRAND
 const buildDirectoryPath = path.resolve(__dirname, '../build')
