@@ -20,7 +20,7 @@ export default function getContentFulClient(req) {
     return response
   }
 
-  const getCategoryTree = async ({locale}) => {
+  const getCategoryTree = async ({ locale }) => {
     // We want to load the collection tree only once the first time
     // we have to investigate how to load the application and keep it cached after.
     const { data } = await Axios.post(
@@ -64,7 +64,7 @@ export default function getContentFulClient(req) {
       }
     }
 
-    const _categoryTree = arrayToTree(categories, {dataField: null})
+    const _categoryTree = arrayToTree(categories, { dataField: null })
 
     return _categoryTree
   }

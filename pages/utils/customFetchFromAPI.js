@@ -10,7 +10,7 @@ import getAPIURL from 'react-storefront/api/getAPIURL'
  *
  * Build in funtion takes only localhost or 127.0.0.1 to mkae local request
  * custom iplementation manages altistorefront domain and enable the calls for multilingual calls
- * 
+ *
  * ```js
  * import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
  * import createLazyProps from 'react-storefront/props/createLazyProps'
@@ -38,7 +38,8 @@ export default function customFetchFromAPI({ req, asPath, pathname, locale }) {
     // Validation to avoid local issues with custom domain
     const isLocalHost = host.startsWith('localhost') || host.startsWith('127.0.0.1')
     const isLocalCustomDomain = host.startsWith('altistorefront')
-    const isMultilingualLocalHost = host.startsWith('fr.altistorefront') || host.startsWith('en.altistorefront')
+    const isMultilingualLocalHost =
+      host.startsWith('fr.altistorefront') || host.startsWith('en.altistorefront')
     if (isLocalHost || isLocalCustomDomain || isMultilingualLocalHost) {
       protocol = 'http://'
     }
@@ -59,7 +60,7 @@ export default function customFetchFromAPI({ req, asPath, pathname, locale }) {
       host: req.headers.host,
       'x-next-page': `/api${pathname.replace(/\/$/, '')}`,
       cookie: req.headers.cookie,
-      ...headers
+      ...headers,
     }
   }
 
