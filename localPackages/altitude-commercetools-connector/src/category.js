@@ -4,19 +4,19 @@ import { getProductsByCategoryId, getCategoryById } from "./clients/commercetool
 import { getLocale } from './clients/utils/index.ts'
 
 export default async function category(params, req, res) {
+  const locale = getLocale({host: req.headers.host})
   return await fulfillAPIRequest(req, {
-      appData: createAppData,
-      pageData: () => getPageData(params, req),
+      appData: () => createAppData({locale}),
+      pageData: () => getPageData({params, req, locale}),
   })
 }
 
-async function getPageData(params, req) {
-  const lang = getLocale({host: req.headers.host})
+async function getPageData({params, req, locale}) {
   const { filters = '[]' } = params
   const { categorySlug } = req.query
   const { body: category } = await getCategoryById({ categoryId: categorySlug[0] })
   const plp = await getProductsByCategoryId({ categoryId: categorySlug[0] })
-  const categoryName = category.name[lang]
+  const categoryName = category.name[locale]
   // collect all page data
   return {
       id: category.id,
