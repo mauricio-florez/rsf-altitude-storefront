@@ -21,6 +21,9 @@
     "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\""
   },
   "dependencies": {
+    "@commercetools/importapi-sdk": "^3.0.0",
+    "@commercetools/platform-sdk": "^3.0.0",
+    "@commercetools/sdk-client-v2": "^1.4.0",
     "@material-ui/core": "4.11.2",
     "@material-ui/icons": "4.11.2",
     "@material-ui/lab": "4.0.0-alpha.57",
@@ -35,6 +38,7 @@
     "lorem-ipsum": "2.0.3",
     "module-alias": "2.2.1",
     "next": "10.0.3",
+    "performant-array-to-tree": "1.11.0",
     "preact": "10.1.0",
     "preact-render-to-string": "5.1.2",
     "preact-ssr-prepass": "1.0.0",
@@ -50,12 +54,14 @@
     "@layer0/devtools": "4.17.0",
     "@layer0/next": "4.17.0",
     "@layer0/prefetch": "4.17.0",
+    "@types/node": "18.7.6",
     "@layer0/react": "4.17.0",
     "babel-plugin-transform-imports": "2.0.0",
     "dotenv": "8.2.0",
     "nodemon": "2.0.2",
     "npm-commands": "1.1.0",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "typescript": "4.7.4"
   },
   "nodemonConfig": {
     "ignore": [

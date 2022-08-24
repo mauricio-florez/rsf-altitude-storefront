@@ -1,21 +1,26 @@
 import React, { useCallback } from 'react'
+// styles
 import { Typography, Grid, Container, Hidden } from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
-import ResponsiveTiles from 'react-storefront/ResponsiveTiles'
-import ProductItem from '../../components/product/ProductItem'
-import ShowMore from 'react-storefront/plp/ShowMore'
-import Head from 'next/head'
-import BackToTop from 'react-storefront/BackToTop'
 import { Skeleton } from '@material-ui/lab'
 import { Hbox } from 'react-storefront/Box'
 import Breadcrumbs from 'react-storefront/Breadcrumbs'
 import LoadMask from 'react-storefront/LoadMask'
-import useSearchResultsStore from 'react-storefront/plp/useSearchResultsStore'
+// compoenents
+import ResponsiveTiles from 'react-storefront/ResponsiveTiles'
+import ProductItem from '../../components/product/ProductItem'
+import ShowMore from 'react-storefront/plp/ShowMore'
+import BackToTop from 'react-storefront/BackToTop'
 import Filter from 'react-storefront/plp/Filter'
 import SearchResultsProvider from 'react-storefront/plp/SearchResultsProvider'
 import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 import FilterButton from 'react-storefront/plp/FilterButton'
 import SortButton from 'react-storefront/plp/SortButton'
+// SEO
+import Head from 'next/head'
+// HOOK
+import useSearchResultsStore from 'react-storefront/plp/useSearchResultsStore'
+// API
 import Fill from 'react-storefront/Fill'
 import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
 import createLazyProps from 'react-storefront/props/createLazyProps'
@@ -74,8 +79,6 @@ const Subcategory = lazyProps => {
 
     for (let filter of filters) {
       const [name, value] = filter.split(':')
-
-      console.log(name, value)
 
       if (query[name]) {
         query[name] = `${query[name]},${value}`
@@ -180,15 +183,6 @@ const Subcategory = lazyProps => {
                               <Skeleton variant="rect" />
                             </Fill>
                             <Skeleton height={26} />
-                            <ProductOptionSelector
-                              skeleton={4}
-                              variant="swatch"
-                              size="small"
-                              optionProps={{
-                                size: 'small',
-                                showLabel: false,
-                              }}
-                            />
                             <Skeleton height={18} />
                             <Skeleton height={24} style={{ marginTop: '5px' }} />
                           </div>

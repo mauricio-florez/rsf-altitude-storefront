@@ -14,6 +14,19 @@ const _preLayer0Export = withReactStorefront({
         maxChunks: 1
       })
     )
+    config.module.rules.push({
+      test: /\.(ts)x?$/,
+      use: [
+        {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true,
+            experimentalWatchApi: true,
+            onlyCompileBundledFiles: true,
+          },
+        },
+      ],
+    })
     return config
   }
 })
