@@ -8,7 +8,7 @@ import { Container } from '@material-ui/core'
 import Link from 'react-storefront/link/Link'
 import SessionContext from 'react-storefront/session/SessionContext'
 import get from 'lodash/get'
-import {Box} from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
   title: {},
@@ -46,7 +46,7 @@ export default function Header({ menu, categoryTree }) {
       <AppBar>
         <Container maxWidth="lg" className={classes.container}>
           <a href="/" aria-label="Go home">
-              <Logo style={{ width: 120, height: 48 }} className={classes.logo} />
+            <Logo style={{ width: 120, height: 48 }} className={classes.logo} />
           </a>
           <Search />
           <CartButton quantity={get(session, 'itemsInCart')} />
@@ -55,21 +55,21 @@ export default function Header({ menu, categoryTree }) {
 
       {categoryTree && (
         <Container>
-          <Box sx={{display: 'flex', flexDirection: 'row'}}>
+          <Box sx={{ display: 'flex', flexDirection: 'row' }}>
             {categoryTree.map(c => (
-              <Box key={c.id} sx={{mr: 2}}>
+              <Box key={c.id} sx={{ mr: 2 }}>
                 <Link href={`/s/${c.slug}`}>
-                  <a style={{fontWeight: '900'}}>{c.name.en}</a>
+                  <a style={{ fontWeight: '900' }}>{c.name.en}</a>
                 </Link>
-                
-                {c.children && c.children.map(cc => (
-                  <Box key={cc.id}>
-                    <Link href={`/s/${cc.slug}`}>
-                      <a>&#x21b3; {cc.name.en}</a>
-                    </Link>
-                    
-                  </Box>
-                ))}
+
+                {c.children &&
+                  c.children.map(cc => (
+                    <Box key={cc.id}>
+                      <Link href={`/s/${cc.slug}`}>
+                        <a>&#x21b3; {cc.name.en}</a>
+                      </Link>
+                    </Box>
+                  ))}
               </Box>
             ))}
           </Box>
