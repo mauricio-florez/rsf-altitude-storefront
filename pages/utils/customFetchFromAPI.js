@@ -1,7 +1,7 @@
 import fetch from 'react-storefront/fetch'
 import getAPIURL from 'react-storefront/api/getAPIURL'
 
-// TODO: Evaluate if this strategy is approapiate in teh future, it may cause desynchronization with rsf packages
+// TODO: Evaluate if this strategy is appropriate in the future, it may cause desynchronization with rsf packages
 
 /**
  * A custom implementation of a convenience function to be used in `getInitialProps` to fetch data for the page from an
