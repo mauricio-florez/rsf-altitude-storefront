@@ -8,7 +8,7 @@ import getAPIURL from 'react-storefront/api/getAPIURL'
  * API endpoint at the same path as the page being requested.  So for example, when rendering
  * `/p/1`, this function will fetch data from `/api/p/1?__v__={__NEXT_DATA__.buildId}`.
  *
- * Build in funtion takes only localhost or 127.0.0.1 to mkae local request
+ * Build in function takes only localhost or 127.0.0.1 to make local request
  * custom iplementation manages altistorefront domain and enable the calls for multilingual calls
  *
  * ```js
