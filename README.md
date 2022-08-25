@@ -15,7 +15,7 @@ This repository includes:
 ### 1. EnvFile
 - Check the env-sample file
     -  Ask to Pegasus team members for the missing variables
-    - For CT env variables you should get access to the merchant tool and create a new APi under developer configuration. *(Contact a Staff Engineer to get access).*
+    - For CT env variables you should get access to the merchant tool and create a new API under developer configuration. *(Contact a Staff Engineer to get access).*
 
 ### 2. Multilingual support
 1. Add the following line in yout `host` file:
