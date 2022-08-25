@@ -28,7 +28,7 @@ Now you can access `http://altistorefront:3000/`, `http://en.altistorefront:3000
 
 <br/>
 
-> **_NOTE:_** this local registry is optional if you don't proced with the steps above, you'll still see the english version.
+> **_NOTE:_** this local registry is optional if you don't proceed with the steps above, you'll still see the English version.
 
 <br/>
 
