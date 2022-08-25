@@ -18,7 +18,7 @@ This repository includes:
     - For CT env variables you should get access to the merchant tool and create a new API under developer configuration. *(Contact a Staff Engineer to get access).*
 
 ### 2. Multilingual support
-1. Add the following line in yout `host` file:
+1. Add the following line in your `host` file:
 
 ```
 127.0.0.1 altistorefront fr.altistorefront en.altistorefront
