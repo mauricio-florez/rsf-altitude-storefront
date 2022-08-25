@@ -9,7 +9,7 @@ import getAPIURL from 'react-storefront/api/getAPIURL'
  * `/p/1`, this function will fetch data from `/api/p/1?__v__={__NEXT_DATA__.buildId}`.
  *
  * Build in function takes only localhost or 127.0.0.1 to make local request
- * custom iplementation manages altistorefront domain and enable the calls for multilingual calls
+ * custom implementation manages altistorefront domain and enable the calls for multilingual calls
  *
  * ```js
  * import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
