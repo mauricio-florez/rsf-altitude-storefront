@@ -35,4 +35,4 @@ A series of commands are available in the file named `package.json` in order to 
 
 > **Important**: At this point, even though **Altitude Design System** is an independent project and manages its own version and environment, it is used inside **Altitude Storefront** as a local dependency.
 
-When the **Altitude Storefront** is set up and executed, the building process of the **Altitude Design Systen** project will be triggered.
+When the **Altitude Storefront** is set up and executed, the building process of the **Altitude Design System** project will be triggered.
