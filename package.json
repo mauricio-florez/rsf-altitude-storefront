@@ -9,7 +9,7 @@
     "layer0:dev": "layer0 dev",
     "layer0:build": "layer0 build",
     "layer0:deploy": "layer0 deploy",
-    "preinstall": "node scripts/preinstall.js",
+    "postinstall": "node scripts/postinstall.js",
     "prestart": "node scripts/prestart.js",
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development nodemon server.js",
