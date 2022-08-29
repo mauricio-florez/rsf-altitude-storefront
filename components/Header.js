@@ -45,9 +45,11 @@ export default function Header({ menu, categoryTree }) {
     <>
       <AppBar>
         <Container maxWidth="lg" className={classes.container}>
-          <a href="/" aria-label="Go home">
-            <Logo style={{ width: 120, height: 48 }} className={classes.logo} />
-          </a>
+          <Link href="/">
+            <a aria-label="Go home">
+              <Logo style={{ width: 120, height: 48 }} className={classes.logo} />
+            </a>
+          </Link>
           <Search />
           <CartButton quantity={get(session, 'itemsInCart')} />
         </Container>
@@ -59,14 +61,14 @@ export default function Header({ menu, categoryTree }) {
             {categoryTree.map(c => (
               <Box key={c.id} sx={{ mr: 2 }}>
                 <Link href={`/s/${c.slug}`}>
-                  <a style={{ fontWeight: '900' }}>{c.name.en}</a>
+                  <a style={{ fontWeight: '900' }}>{c.name}</a>
                 </Link>
 
                 {c.children &&
                   c.children.map(cc => (
                     <Box key={cc.id}>
                       <Link href={`/s/${cc.slug}`}>
-                        <a>&#x21b3; {cc.name.en}</a>
+                        <a>&#x21b3; {cc.name}</a>
                       </Link>
                     </Box>
                   ))}
