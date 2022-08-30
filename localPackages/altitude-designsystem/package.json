@@ -1,0 +1,29 @@
+{
+  "name": "altitude-designsystem",
+  "description": "The Altitude Sports Design System",
+  "author": "Altitude Sports",
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "private": true,
+  "main": "packages/index.js",
+  "scripts": {
+    "all:install:clean": "npm run packages:install:clean && npm run designsystem:install:clean",
+    "all:install": "npm run designsystem:install && npm run packages:install",
+    "all:update": "npm run designsystem:update && npm run packages:update",
+    "packages:build": "lerna run build",
+    "packages:build:clean": "lerna run build:clean",
+    "packages:build:watch": "lerna run build:watch",
+    "packages:install:clean": "lerna exec -- rm -rf ./node_modules/",
+    "packages:install": "npm run packages:symlink",
+    "packages:symlink": "lerna bootstrap",
+    "packages:list": "lerna list -la",
+    "packages:publish": "lerna publish --conventional-commits",
+    "packages:update": "lerna exec -- npx npm-check-updates -u",
+    "designsystem:install:clean": "rm -rf ./node_modules/",
+    "designsystem:install": "npm install",
+    "designsystem:update": "npx npm-check-updates -u"
+  },
+  "devDependencies": {
+    "lerna": "4.0.0"
+  }
+}

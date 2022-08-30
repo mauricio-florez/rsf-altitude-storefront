@@ -1,0 +1,18 @@
+{
+  "component": {
+    "button": {
+      "primary": {
+        "color": {
+          "background": { "value": "{brand.color.background.primary.value}" },
+          "content": { "value": "{brand.color.font.primary.value}" }
+        }
+      },
+      "secondary": {
+        "color": {
+          "background": { "value": "{brand.color.background.secondary.value}" },
+          "content": { "value": "{brand.color.font.secondary.value}" }
+        }
+      }
+    }
+  }
+}
