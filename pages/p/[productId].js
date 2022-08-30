@@ -23,7 +23,7 @@ import Lazy from 'react-storefront/Lazy'
 import TabPanel from 'react-storefront/TabPanel'
 import QuantitySelector from 'react-storefront/QuantitySelector'
 // import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
-import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
+import customFetchFromAPI from '../utils/customFetchFromAPI'
 import createLazyProps from 'react-storefront/props/createLazyProps'
 import Head from 'next/head'
 
@@ -293,6 +293,6 @@ const Product = React.memo(lazyProps => {
   )
 })
 
-Product.getInitialProps = createLazyProps(fetchFromAPI)
+Product.getInitialProps = createLazyProps(customFetchFromAPI)
 
 export default Product

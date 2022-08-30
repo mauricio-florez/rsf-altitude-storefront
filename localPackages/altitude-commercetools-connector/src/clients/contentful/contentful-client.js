@@ -20,7 +20,7 @@ export default function getContentFulClient(req) {
     return response
   }
 
-  const getCategoryTree = async () => {
+  const getCategoryTree = async ({ locale = 'en-CA' } = {}) => {
     // We want to load the collection tree only once the first time
     // we have to investigate how to load the application and keep it cached after.
     const { data } = await Axios.post(
@@ -30,8 +30,7 @@ export default function getContentFulClient(req) {
                 categoryCollection {
                     items {
                         sys { id }
-                        nameFr: name(locale: "fr-CA")
-                        nameEn: name(locale: "en-US")
+                        name: name(locale: "${locale}")
                         slug
                         parentCategoriesCollection{
                             items{
@@ -49,10 +48,7 @@ export default function getContentFulClient(req) {
     for (const category of data.data.categoryCollection.items) {
       const baseCategory = {
         id: category.sys.id,
-        name: {
-          fr: category.nameFr,
-          en: category.nameEn,
-        },
+        name: category.name,
         slug: category.slug,
       }
 
@@ -68,7 +64,7 @@ export default function getContentFulClient(req) {
       }
     }
 
-    let _categoryTree = arrayToTree(categories, { dataField: null })
+    const _categoryTree = arrayToTree(categories, { dataField: null })
 
     return _categoryTree
   }

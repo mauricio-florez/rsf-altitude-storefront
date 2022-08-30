@@ -22,7 +22,8 @@ import Head from 'next/head'
 import useSearchResultsStore from 'react-storefront/plp/useSearchResultsStore'
 // API
 import Fill from 'react-storefront/Fill'
-import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
+import customFetchFromAPI from '../utils/customFetchFromAPI'
+
 import createLazyProps from 'react-storefront/props/createLazyProps'
 
 const useStyles = makeStyles(theme => ({
@@ -207,7 +208,7 @@ const Subcategory = lazyProps => {
 Subcategory.getInitialProps = createLazyProps(opts => {
   const { res } = opts
   if (res) res.setHeader('Cache-Control', 'max-age=99999')
-  return fetchFromAPI(opts)
+  return customFetchFromAPI(opts)
 })
 
 export default Subcategory
