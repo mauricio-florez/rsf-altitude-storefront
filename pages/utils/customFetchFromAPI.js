@@ -29,7 +29,7 @@ import getAPIURL from 'react-storefront/api/getAPIURL'
  * @param {Object} opts The options object provided to `getInitialProps`
  * @return {Promise} A promise that resolves to the data that the page should display
  */
-export default function customFetchFromAPI({ req, asPath, pathname }) {
+export default function customFetchFromAPI({ req, asPath, pathname, locale='en-ca' }) {
   const host = req ? process.env.API_HOST || req.headers.host : ''
   let protocol = ''
 
@@ -44,6 +44,9 @@ export default function customFetchFromAPI({ req, asPath, pathname }) {
       protocol = 'http://'
     }
   }
+
+  const regex = new RegExp(`\^\/${locale}\/?`);
+  asPath = asPath.replace(regex, '/')
 
   let uri = getAPIURL(asPath)
   let headers = {}
@@ -64,7 +67,7 @@ export default function customFetchFromAPI({ req, asPath, pathname }) {
     }
   }
 
-  const url = `${protocol}${host}${uri}`
+  const url = `${protocol}${host}${uri}&locale=${locale}`
 
   return fetch(url, { credentials: 'include', headers }).then(res => res.json())
 }
