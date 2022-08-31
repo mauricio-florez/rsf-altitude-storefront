@@ -10,6 +10,10 @@ const _preLayer0Export = withReactStorefront({
   target: 'serverless',
   // connector: 'react-storefront/mock-connector',
   connector: 'altitude-commercetools-connector',
+  i18n: {
+    locales: ['en-CA', 'fr-CA'],
+    defaultLocale: 'fr-CA'
+  },
   webpack: config => {
     config.plugins.push(
       new webpack.optimize.LimitChunkCountPlugin({
