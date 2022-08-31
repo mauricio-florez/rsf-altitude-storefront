@@ -11,7 +11,7 @@ import get from 'lodash/get'
 import { Close as CloseIcon } from '@material-ui/icons'
 import { makeStyles } from '@material-ui/core/styles'
 import Image from 'react-storefront/Image'
-import Link from 'react-storefront/link/Link'
+import Link from '../Link'
 import { Hbox } from 'react-storefront/Box'
 
 const useStyles = makeStyles(theme => ({

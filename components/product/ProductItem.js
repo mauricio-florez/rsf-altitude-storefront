@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react'
-import Link from 'react-storefront/link/Link'
+import Link from '../Link'
 import { Vbox } from 'react-storefront/Box'
 import { Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
