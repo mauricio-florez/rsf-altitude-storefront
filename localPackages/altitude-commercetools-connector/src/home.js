@@ -1,9 +1,8 @@
 import fulfillAPIRequest from 'react-storefront/props/fulfillAPIRequest'
 import createAppData from './clients/commercetools-v2/utils/createAppData'
-import { getLocale } from './clients/utils/index.ts'
 
 export default async function home(req, res) {
-  const locale = getLocale({ host: req.headers.host })
+  const { locale } = req.query
   return await fulfillAPIRequest(req, {
     appData: () => createAppData({ locale }),
     pageData: () =>
