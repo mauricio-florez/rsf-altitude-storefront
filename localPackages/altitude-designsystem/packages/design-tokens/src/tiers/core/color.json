@@ -1,0 +1,21 @@
+{
+  "core": {
+    "color": {
+      "black": {
+        "charcoal": { "value": "#36454F" },
+        "licorice": { "value": "#1D1212" },
+        "onyx": { "value": "#353935" }
+      },
+      "red": {
+        "blood": { "value": "#880808" },
+        "bright": { "value": "#EE4B2B" },
+        "cadmium": { "value": "#D22B2B" }
+      },
+      "white": {
+        "beige": { "value": "#F5F5DC" },
+        "pearl": { "value": "#E2DFD2" },
+        "navajo": { "value": "#FFDEAD" }
+      }
+    }
+  }
+}

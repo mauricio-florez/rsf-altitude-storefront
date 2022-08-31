@@ -1,0 +1,22 @@
+{
+  "name": "@altitude-designsystem/tokens",
+  "description": "The Altitude Design System: Design Tokens package",
+  "author": "Altitude Sports",
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "private": true,
+  "main": "build/index.js",
+  "files": [
+    "build/index.scss",
+    "build/index.js"
+  ],
+  "scripts": {
+    "build": "npm run build:clean && npm run build:exec",
+    "build:exec": "node scripts/build.js",
+    "build:clean": "rm -rf build/**/*",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "style-dictionary": "3.7.1"
+  }
+}
