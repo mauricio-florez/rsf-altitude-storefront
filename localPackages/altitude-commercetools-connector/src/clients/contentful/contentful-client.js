@@ -20,6 +20,15 @@ export default function getContentFulClient(req) {
     return response
   }
 
+  async function getEntries(entry_id, locale) {
+    let response
+    await client
+      .getEntries({'sys.id': entry_id, locale})
+      .then(entry => (response = entry))
+      .catch(err => (response = err))
+    return response
+  }
+
   const getCategoryTree = async ({ locale = 'en-CA' } = {}) => {
     // We want to load the collection tree only once the first time
     // we have to investigate how to load the application and keep it cached after.
@@ -93,6 +102,7 @@ export default function getContentFulClient(req) {
 
   return {
     getEntry,
+    getEntries,
     getCategoryTree,
     getCollectionPaths,
   }

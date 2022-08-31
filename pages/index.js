@@ -7,6 +7,7 @@ import LoadMask from 'react-storefront/LoadMask'
 import Head from 'next/head'
 import createLazyProps from 'react-storefront/props/createLazyProps'
 import customFetchFromAPI from './utils/customFetchFromAPI'
+import { Hero, HomeCollection } from '../components/content-types'
 
 const useStyles = makeStyles(theme => ({
   main: {
@@ -21,23 +22,24 @@ const useStyles = makeStyles(theme => ({
 export default function Index(lazyProps) {
   const classes = useStyles()
   const [state] = useLazyState(lazyProps)
+  const { hero, collections } = state.pageData.slots
 
   return (
     <>
-      {state.loading ? null : (
-        <Head>
-          <title>{state.pageData.title}</title>
-        </Head>
+      {!state.loading && (
+        <>
+          <Head>
+            <title>{state.pageData.title}</title>
+          </Head>
+          <Hero {...hero} />
+        </>
       )}
       <Container maxWidth="lg">
         {state.loading ? (
           <LoadMask fullscreen />
         ) : (
           <div className={classes.main}>
-            <Typography variant="h3" component="h1" gutterBottom color="primary">
-              {state.pageData.slots.heading}
-            </Typography>
-            <CmsSlot>{state.pageData.slots.description}</CmsSlot>
+            <HomeCollection {...collections} />
           </div>
         )}
       </Container>
