@@ -5,8 +5,7 @@ import StorefrontImage from 'react-storefront/Image'
  *
  * @property {string} src -> Image url. Required
  * @property {string} alt -> alt label
- * @property {string} url -> button link url
- * @property {string} className -> image css class
+ * @property {string} className -> Image css class
  * @property {string} width -> Image width
  * @property {string} height -> Image height
  * @property {string} format -> Image format. OneOf([webp, jpg]). Defaut webp
