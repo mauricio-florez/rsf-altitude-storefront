@@ -26,5 +26,5 @@ This component renders Hero (https://app.contentful.com/spaces/`space-id`/conten
 ## How to Use
 
 ```js
-<HomeCollection {...data} />
+<Home {...data} />
 ```
