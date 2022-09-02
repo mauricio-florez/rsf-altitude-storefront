@@ -23,9 +23,11 @@ export type ProductsByCategoryIdRequestType = {
     }
     filterQuery: string;
     categoryId: string;
+    facet: string[];
 }
 
 export type CreateQueryType = {
     categoryId: string;
-    filterQuery: string
+    filterQuery: string;
+    facet: string[];
 }

@@ -5,6 +5,7 @@ import {
   getCategoryById,
 } from './clients/commercetools-v2/commercetoolsClient'
 import { getLocale } from './clients/utils/index.ts'
+import getContentFulClient from './clients/contentful/contentful-client';
 
 export default async function category(params, req, res) {
   const locale = getLocale({ host: req.headers.host })
@@ -18,8 +19,19 @@ async function getPageData({ params, req, locale }) {
   const filterKey = Object.keys(req.query).find(k => k.includes('variants.attributes'))
   const filterQuery = (filterKey && `${filterKey}:${req.query[filterKey]}`) || ''
   const { categorySlug } = req.query
+
+  const facetResponse = await getContentFulClient().getFacets(locale)
+  const formattedFacet = facetResponse.map(facet => ({...facet, field: `variants.attributes.${facet.field}`}))
+  const facet = formattedFacet.map(f => f.field)
+
   const { body: category } = await getCategoryById({ categoryId: categorySlug[0] })
-  const plp = await getProductsByCategoryId({ categoryId: categorySlug[0], filterQuery })
+  const plp = await getProductsByCategoryId({ categoryId: categorySlug[0], facet, filterQuery })
+
+  const plpFacets = plp.facets.map(f => ({
+    ...f,
+    name: formattedFacet.find(ff => ff.field === f.name).label
+  }))
+
   const categoryName = category.name[locale]
   // collect all page data
   return {
@@ -37,5 +49,6 @@ async function getPageData({ params, req, locale }) {
       },
     ],
     ...plp,
+    facets: plpFacets
   }
 }

@@ -27,19 +27,19 @@ export default function getContentFulClient(req) {
       `https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`,
       {
         query: `query {
-                categoryCollection {
+                  categoryCollection {
                     items {
-                        sys { id }
-                        name: name(locale: "${locale}")
-                        slug
-                        parentCategoriesCollection{
-                            items{
-                                sys { id }
-                            }
+                      sys { id }
+                      name: name(locale: "${locale}")
+                      slug
+                      parentCategoriesCollection{
+                        items{
+                          sys { id }
                         }
+                      }
                     }
-                }
-            }`,
+                  }
+                }`,
       }
     )
 
@@ -69,6 +69,25 @@ export default function getContentFulClient(req) {
     return _categoryTree
   }
 
+  const getFacets = async ({ locale = 'en-CA' } = {}) => {
+    const { data } = await Axios.post(
+      `https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`,
+      {
+        query: `query {
+                  facetsCollection {
+                    items {
+                      field
+                      label: label(locale: "${locale}")
+                      type
+                    }
+                  }
+                }`,
+      }
+    )
+
+    return data.data.facetsCollection.items || [];
+  }
+
   let _collectionPaths = new Map()
   const getCollectionPaths = async () => {
     if (_collectionPaths.size === 0) {
@@ -95,5 +114,6 @@ export default function getContentFulClient(req) {
     getEntry,
     getCategoryTree,
     getCollectionPaths,
+    getFacets,
   }
 }
