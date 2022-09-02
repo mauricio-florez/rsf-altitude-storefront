@@ -10,7 +10,7 @@ import reportError from '../components/reportError'
 import useJssStyles from 'react-storefront/hooks/useJssStyles'
 import SessionProvider from 'react-storefront/session/SessionProvider'
 import useAppStore from 'react-storefront/hooks/useAppStore'
-
+import { useRouter } from 'next/router'
 import { Prefetch } from '@layer0/react'
 import Link from 'next/link'
 import { createNextDataURL } from '@layer0/next/client'
@@ -23,11 +23,11 @@ const styles = theme => ({
 
 const useStyles = makeStyles(styles)
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps, hostname, asPath }) {
   useJssStyles()
   const classes = useStyles()
   const [appData] = useAppStore(pageProps || {})
-
+  const router = useRouter();
   return (
     <PWA errorReporter={reportError}>
       <Head>
@@ -36,6 +36,9 @@ export default function MyApp({ Component, pageProps }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
         />
+        {router.locales.map((value) => {
+          return <link key={value} rel="alternate" href={`http://${hostname}.com/${value}${asPath}`} hrefLang={value} />
+        })}
       </Head>
       <SessionProvider url="/api/session">
         <MuiThemeProvider theme={theme}>
@@ -52,10 +55,10 @@ export default function MyApp({ Component, pageProps }) {
 
 MyApp.getInitialProps = async function({ Component, ctx }) {
   let pageProps = {}
-
+  const { req : { hostname }, asPath } = ctx
   if (Component.getInitialProps) {
     pageProps = await Component.getInitialProps(ctx)
   }
 
-  return { pageProps }
+  return { pageProps, hostname, asPath }
 }
