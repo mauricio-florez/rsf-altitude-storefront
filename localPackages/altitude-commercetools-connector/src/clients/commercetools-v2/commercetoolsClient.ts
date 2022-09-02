@@ -7,26 +7,26 @@ import { CreateQueryType, ProductsByCategoryIdRequestType, type PlpResponse } fr
 import { normalizePlp } from './mappers/normalizePlp'
 const apiRoot = createApiBuilderFromCtpClient(ctpClient);
 
-const getProductsByCategoryId = async ({ req= {}, params= {}, categoryId='', facet=[], filterQuery='' }: ProductsByCategoryIdRequestType): Promise<PlpResponse> => {
+const getProductsByCategoryId = async ({ req= {}, params= {}, categoryId='', facets=[], filterQuery='' }: ProductsByCategoryIdRequestType): Promise<PlpResponse> => {
   try {
     const { body: search } = await apiRoot
       .withProjectKey({ projectKey })
       .productProjections()
       .search()
-      .get(createQueryWith({categoryId, facet, filterQuery }))
+      .get(createQueryWith({categoryId, facets, filterQuery }))
       .execute();
 
-    return normalizePlp(search);
+    return normalizePlp(search, facets);
 
   } catch (error) {
     console.error(error);
   }
 };
 
-const createQueryWith = ({categoryId, facet, filterQuery}: CreateQueryType) => {
+const createQueryWith = ({categoryId, facets, filterQuery}: CreateQueryType) => {
   const query = {
     queryArgs: {
-      facet,
+      facet: facets.map(f => f.field),
       filter: [`categories.id:"${categoryId}"`],
     }
   }

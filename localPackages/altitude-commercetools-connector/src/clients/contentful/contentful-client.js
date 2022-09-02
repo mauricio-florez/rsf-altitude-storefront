@@ -84,8 +84,10 @@ export default function getContentFulClient(req) {
                 }`,
       }
     )
+    const facets = data.data.facetsCollection
 
-    return data.data.facetsCollection.items || [];
+    if (!facets) return []
+    return facets.items.map(f => ({...f, field: `variants.attributes.${f.field}`}));
   }
 
   let _collectionPaths = new Map()

@@ -20,17 +20,9 @@ async function getPageData({ params, req, locale }) {
   const filterQuery = (filterKey && `${filterKey}:${req.query[filterKey]}`) || ''
   const { categorySlug } = req.query
 
-  const facetResponse = await getContentFulClient().getFacets(locale)
-  const formattedFacet = facetResponse.map(facet => ({...facet, field: `variants.attributes.${facet.field}`}))
-  const facet = formattedFacet.map(f => f.field)
-
+  const facets = await getContentFulClient().getFacets(locale)
   const { body: category } = await getCategoryById({ categoryId: categorySlug[0] })
-  const plp = await getProductsByCategoryId({ categoryId: categorySlug[0], facet, filterQuery })
-
-  const plpFacets = plp.facets.map(f => ({
-    ...f,
-    name: formattedFacet.find(ff => ff.field === f.name).label
-  }))
+  const plp = await getProductsByCategoryId({ categoryId: categorySlug[0], facets, filterQuery })
 
   const categoryName = category.name[locale]
   // collect all page data
@@ -49,6 +41,5 @@ async function getPageData({ params, req, locale }) {
       },
     ],
     ...plp,
-    facets: plpFacets
   }
 }
