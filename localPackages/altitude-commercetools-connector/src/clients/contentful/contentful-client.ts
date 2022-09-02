@@ -69,7 +69,7 @@ export default function getContentFulClient(req) {
     return _categoryTree
   }
 
-  const getFacets = async ({ locale = 'en-CA' } = {}) => {
+  const getFacets = async ({ locale = 'en-CA' } = {}): Promise<FacetResponse[]> => {
     const { data } = await Axios.post(
       `https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`,
       {
@@ -90,32 +90,9 @@ export default function getContentFulClient(req) {
     return facets.items.map(f => ({...f, field: `variants.attributes.${f.field}`}));
   }
 
-  let _collectionPaths = new Map()
-  const getCollectionPaths = async () => {
-    if (_collectionPaths.size === 0) {
-      const tree = await getCategoryTree()
-
-      const recursivelyProcessChildren = (c, parentPath = '') => {
-        for (const category of c) {
-          const path = `${parentPath}/${category.slug}&facets=${category.facets}`
-          collection.set(path, category)
-
-          if (category.children && category.children.length > 0) {
-            recursivelyProcessChildren(category.children, path)
-          }
-        }
-      }
-
-      recursivelyProcessChildren(tree)
-    }
-
-    return _collectionPaths
-  }
-
   return {
     getEntry,
     getCategoryTree,
-    getCollectionPaths,
     getFacets,
   }
 }

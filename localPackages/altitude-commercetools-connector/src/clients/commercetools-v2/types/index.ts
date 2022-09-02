@@ -23,11 +23,17 @@ export type ProductsByCategoryIdRequestType = {
     }
     filterQuery: string;
     categoryId: string;
-    facets: string[];
+    facets: ContentfulFacetResponse[];
 }
 
 export type CreateQueryType = {
     categoryId: string;
     filterQuery: string;
-    facets: any[];
+    facets: ContentfulFacetResponse[];
 }
+
+export type ContentfulFacetResponse = {
+    field: string;
+    type: 'list'|'hierarchy'|'grid';
+    label: string;
+  }
