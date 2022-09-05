@@ -20,7 +20,7 @@ async function getPageData({ params, req, locale }) {
   const filterQuery = (filterKey && `${filterKey}:${req.query[filterKey]}`) || ''
   const { categorySlug } = req.query
 
-  const facets = await getContentFulClient().getFacets(locale)
+  const facets = await getContentFulClient().getFacets({locale})
   const { body: category } = await getCategoryById({ categoryId: categorySlug[0] })
   const plp = await getProductsByCategoryId({ categoryId: categorySlug[0], facets, filterQuery })
 
