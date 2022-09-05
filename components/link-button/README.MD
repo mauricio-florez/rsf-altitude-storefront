@@ -13,7 +13,7 @@ This component is atomic and brand agnostic. Displays anchor element. Based on S
 
 * Apect ratio default to 1 if no with and height are provided
 
-## How to Use
+## Usage
 
 ```js
 <LinkButton label="Shop all styles" url="/" variant="flat" />

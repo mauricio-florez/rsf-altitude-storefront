@@ -1,6 +1,6 @@
 # Hero
 
-This component renders Hero (https://app.contentful.com/spaces/`space-id`/content_types/hero/fields) content types data requested thru Contenful API
+This component renders Hero (https://app.contentful.com/spaces/`space-id`/content_types/hero/fields) content types data requested through Contenful API
 
 ## JSON template:
 
@@ -23,7 +23,7 @@ This component renders Hero (https://app.contentful.com/spaces/`space-id`/conten
 }
 ```
 
-## How to Use
+## Usage
 
 ```js
 <Home {...data} />

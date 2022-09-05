@@ -1,6 +1,6 @@
 # HomeCollection
 
-This component renders HomeCollection (https://app.contentful.com/spaces/`space-id`/content_types/homeCollection/fields) content types data requested thru Contenful API
+This component renders HomeCollection (https://app.contentful.com/spaces/`space-id`/content_types/homeCollection/fields) content types data requested through Contenful API
 
 ## JSON template:
 
@@ -29,7 +29,7 @@ This component renders HomeCollection (https://app.contentful.com/spaces/`space-
 }
 ```
 
-## How to Use
+## Usage
 
 ```js
 <HomeCollection {...data} />

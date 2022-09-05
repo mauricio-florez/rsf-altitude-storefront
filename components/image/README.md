@@ -16,7 +16,7 @@ Use contenful Image API to retrieval and manipulate image files referenced from 
 
 * Apect ratio default to 1 if no with and height are provided
 
-## How to Use
+## Usage
 
 
 ```js
