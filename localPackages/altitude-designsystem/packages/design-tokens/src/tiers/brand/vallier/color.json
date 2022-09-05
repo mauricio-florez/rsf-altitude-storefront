@@ -2,12 +2,13 @@
   "brand": {
     "color": {
       "background": {
-        "primary": { "value": "{core.color.black.onyx.value}" },
-        "secondary": { "value": "{core.color.red.bright.value}" }
+        "primary": { "value": "{core.color.white.light.value}" },
+        "secondary": { "value": "{core.color.black.dark.value}" },
+        "tertiary": {"value": "{core.color.green.light.value}"}
       },
       "font": {
-        "primary": { "value": "{core.color.black.charcoal.value}" },
-        "secondary": { "value": "{core.color.white.pearl.value}" }
+        "primary": { "value": "{core.color.black.dark.value}" },
+        "secondary": { "value": "{core.color.white.light.value}" }
       }
     }
   }

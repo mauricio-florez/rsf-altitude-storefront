@@ -1,7 +1,6 @@
+@import "altitude-designsystem/packages/design-tokens/build/index.scss";
+
 .container {
-  --color-black: #000;
-  --color-white: #fff;
-  --color-green: rgb(10, 186, 70);
   letter-spacing: 0.7px;
   position: relative;
   font-size: 1.2rem;
@@ -17,8 +16,8 @@
   height: 4.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: $component-button-primary-color-background;
+  color: $component-button-primary-color-content;
   transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s;
 
   &:hover:after {
@@ -37,17 +36,17 @@
 
 .solid {
   &:hover {
-    background-color: var(--color-green);
-    color: var(--color-white);
+    background-color: $component-button-primary-hover-background;
+    color: $component-button-primary-color-background;
   }
 }
 
 .outline {
-  border: 1px solid var(--color-black);
+  border: 1px solid $component-button-primary-color-content;
 
   &:hover {
-    color: var(--color-green);
-    border: 1px solid var(--color-green);
+    color: $component-button-primary-hover-background;
+    border: 1px solid $component-button-primary-hover-background;
   }
 }
 
