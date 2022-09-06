@@ -1,0 +1,14 @@
+{
+  "brand": {
+    "color": {
+      "background": {
+        "primary": { "value": "{core.color.black.onyx.value}" },
+        "secondary": { "value": "{core.color.red.bright.value}" }
+      },
+      "font": {
+        "primary": { "value": "{core.color.black.charcoal.value}" },
+        "secondary": { "value": "{core.color.white.pearl.value}" }
+      }
+    }
+  }
+}

@@ -27,19 +27,19 @@ export default function getContentFulClient(req) {
       `https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`,
       {
         query: `query {
-                categoryCollection {
+                  categoryCollection {
                     items {
-                        sys { id }
-                        name: name(locale: "${locale}")
-                        slug
-                        parentCategoriesCollection{
-                            items{
-                                sys { id }
-                            }
+                      sys { id }
+                      name: name(locale: "${locale}")
+                      slug
+                      parentCategoriesCollection{
+                        items{
+                          sys { id }
                         }
+                      }
                     }
-                }
-            }`,
+                  }
+                }`,
       }
     )
 
@@ -69,31 +69,30 @@ export default function getContentFulClient(req) {
     return _categoryTree
   }
 
-  let _collectionPaths = new Map()
-  const getCollectionPaths = async () => {
-    if (_collectionPaths.size === 0) {
-      const tree = await getCategoryTree()
-
-      const recursivelyProcessChildren = (c, parentPath = '') => {
-        for (const category of c) {
-          const path = `${parentPath}/${category.slug}&facets=${category.facets}`
-          collection.set(path, category)
-
-          if (category.children && category.children.length > 0) {
-            recursivelyProcessChildren(category.children, path)
-          }
-        }
+  const getFacets = async ({ locale = 'en-CA' } = {}): Promise<FacetResponse[]> => {
+    const { data } = await Axios.post(
+      `https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`,
+      {
+        query: `query {
+                  facetsCollection {
+                    items {
+                      field
+                      label: label(locale: "${locale}")
+                      type
+                    }
+                  }
+                }`,
       }
+    )
+    const facets = data.data.facetsCollection
 
-      recursivelyProcessChildren(tree)
-    }
-
-    return _collectionPaths
+    if (!facets) return []
+    return facets.items.map(f => ({...f, field: `variants.attributes.${f.field}`}));
   }
 
   return {
     getEntry,
     getCategoryTree,
-    getCollectionPaths,
+    getFacets,
   }
 }
