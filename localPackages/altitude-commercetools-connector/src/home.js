@@ -8,8 +8,15 @@ import { getLocale } from './clients/utils/index.ts'
 export default async function home(req, res) {
   const locale = getLocale({ host: req.headers.host })
   const contentfulClient = await getContentFulClient()
-  const rawContentfulHero = await contentfulClient.getEntries('2sYF2TPqSaLCLivQolm0Jk', locale)
-  const rawContentfulCollections = await contentfulClient.getEntries('2WREgTPR96bZEwTMABPC1k', locale)
+  
+  const rawContentfulHero = await contentfulClient.getEntries({
+    entry_id: '2sYF2TPqSaLCLivQolm0Jk',
+    locale,
+  })
+  const rawContentfulCollections = await contentfulClient.getEntries({
+    entry_id: '2WREgTPR96bZEwTMABPC1k',
+    locale,
+  })
 
   const hero = normalizeContentfulHero(rawContentfulHero)
   const collections = normalizeContentfulHomeCollections(rawContentfulCollections)

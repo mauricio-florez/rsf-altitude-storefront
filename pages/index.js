@@ -30,7 +30,13 @@ export default function Index(lazyProps) {
           <Head>
             <title>{state.pageData.title}</title>
           </Head>
-          <Hero {...hero} />
+          <Hero
+            title={hero.title}
+            ctaLabel={hero.ctaLabel}
+            image1={hero.image1}
+            image2={hero.image2}
+            image3={hero.image3}
+          />
         </>
       )}
       <Container maxWidth="lg">
@@ -38,7 +44,11 @@ export default function Index(lazyProps) {
           <LoadMask fullscreen />
         ) : (
           <div className={classes.main}>
-            <HomeCollection {...collections} />
+            <HomeCollection
+              ctaLabel={collections.ctaLabel}
+              ctaUrl={collections.ctaUrl}
+              collections={collections.collections}
+            />
           </div>
         )}
       </Container>

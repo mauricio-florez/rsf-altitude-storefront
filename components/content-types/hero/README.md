@@ -26,5 +26,11 @@ This component renders Hero (https://app.contentful.com/spaces/`space-id`/conten
 ## Usage
 
 ```js
-<Home {...data} />
+<Home
+  title={data.title}
+  ctaLabel={data.ctaLabel}
+  image1={data.image1}
+  image2={data.image2}
+  image3={data.image3}
+/>
 ```

@@ -20,7 +20,7 @@ export default function getContentFulClient(req) {
     return response
   }
 
-  async function getEntries(entry_id, locale) {
+  async function getEntries({ entry_id, locale }) {
     let response
     await client
       .getEntries({'sys.id': entry_id, locale})

@@ -32,5 +32,5 @@ This component renders HomeCollection (https://app.contentful.com/spaces/`space-
 ## Usage
 
 ```js
-<HomeCollection {...data} />
+<HomeCollection ctaLabel={data.ctaLabel} ctaUrl={data.ctaUrl} collections={data.collections} />
 ```

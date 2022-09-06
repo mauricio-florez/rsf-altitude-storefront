@@ -5,10 +5,11 @@ export default function normalizeContentfulCollections(data) {
   const {
     items: [{ fields }],
   } = normalizeContentfulEntries(data)
+  const {ctaLabel, ctaUrl, collections} = fields
   
   return {
-    ctaLabel: fields.ctaLabel,
-    ctaUrl: fields.ctaUrl,
-    collections: fields.collections.map(normalizeContentfulCollection)
+    ctaLabel: ctaLabel,
+    ctaUrl: ctaUrl,
+    collections: collections.map(normalizeContentfulCollection)
   }
 }
