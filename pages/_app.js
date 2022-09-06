@@ -55,7 +55,9 @@ export default function MyApp({ Component, pageProps, hostname, asPath }) {
 
 MyApp.getInitialProps = async function({ Component, ctx }) {
   let pageProps = {}
-  const { req : { hostname }, asPath } = ctx
+
+  const { req , asPath } = ctx
+  const hostname = req ? req.hostname : window.location.host
   if (Component.getInitialProps) {
     pageProps = await Component.getInitialProps(ctx)
   }
