@@ -3,7 +3,7 @@ import { type PlpResponse } from './../types/index'
 import { normalizeFacets } from './normalizeFacets'
 import normalizeProduct from './normalizeProduct'
 
-export function normalizePlp(search): PlpResponse {
+export function normalizePlp(search, facets): PlpResponse {
   // TODO: Limit needs to be a config param
   const limit = 24
   // TODO: Check logic in client side, it is adding an additional page
@@ -11,7 +11,7 @@ export function normalizePlp(search): PlpResponse {
 
   const { results = [] } = search
   let products = []
-  const facets: FacetResponseType = search.facets || {}
+  const facetsResponse: FacetResponseType = search.facets || {}
 
   if (results.length > 0) {
       products = results
@@ -25,6 +25,6 @@ export function normalizePlp(search): PlpResponse {
     // sort,
     sortOptions: [],
     filters: [],
-    facets: normalizeFacets(facets),
+    facets: normalizeFacets(facetsResponse, facets),
   }
 }
