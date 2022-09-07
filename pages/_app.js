@@ -37,7 +37,7 @@ export default function MyApp({ Component, pageProps, hostname, asPath }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
         />
         {router.locales.map((value) => {
-          return <link key={value} rel="alternate" href={`http://${hostname}.com/${value}${asPath}`} hrefLang={value} />
+          return <link key={value} rel="alternate" href={`http://${hostname}.com/${value}${router.asPath}`} hrefLang={value} />
         })}
       </Head>
       <SessionProvider url="/api/session">
@@ -56,8 +56,8 @@ export default function MyApp({ Component, pageProps, hostname, asPath }) {
 MyApp.getInitialProps = async function({ Component, ctx }) {
   let pageProps = {}
 
-  const { req , asPath } = ctx
-  const hostname = req ? req.hostname : window.location.host
+  let { req , asPath } = ctx
+  const hostname = req ? req.headers.host : window.location.host
   if (Component.getInitialProps) {
     pageProps = await Component.getInitialProps(ctx)
   }
