@@ -206,8 +206,6 @@ const Subcategory = lazyProps => {
 }
 
 Subcategory.getInitialProps = createLazyProps(opts => {
-  const { res } = opts
-  if (res) res.setHeader('Cache-Control', 'max-age=99999')
   return customFetchFromAPI(opts)
 })
 

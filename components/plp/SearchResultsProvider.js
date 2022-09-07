@@ -35,6 +35,7 @@ export default function SearchResultsProvider({ store, updateStore, queryForStat
         delete query.page
         replaceState(null, null, getURLForState(query))
 
+        // Added this regex expression to remove locale in api calls
         const regex = new RegExp('\/[A-Za-z]{2}\-[A-Za-z]{2}\/'); 
         url = url.replace(regex, '/');
 

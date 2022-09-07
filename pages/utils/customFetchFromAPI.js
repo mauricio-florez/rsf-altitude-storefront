@@ -29,7 +29,7 @@ import getAPIURL from 'react-storefront/api/getAPIURL'
  * @param {Object} opts The options object provided to `getInitialProps`
  * @return {Promise} A promise that resolves to the data that the page should display
  */
-export default function customFetchFromAPI({ req, asPath, pathname, locale='en-ca' }) {
+export default function customFetchFromAPI({ req, asPath, pathname, locale='en-CA' }) {
   const host = req ? process.env.API_HOST || req.headers.host : ''
   let protocol = ''
 
@@ -66,8 +66,11 @@ export default function customFetchFromAPI({ req, asPath, pathname, locale='en-c
       ...headers,
     }
   }
-
-  const url = `${protocol}${host}${uri}&locale=${locale}`
+  // Prod deployment in layer0 is adding locale by default 
+  // not happening in local as we are using this query to translate resources
+  // In gateway we need to ensure we are not duplicating the same query
+  const localeParams = uri.indexOf('locale') > 0 ? '' : `&locale=${locale}` 
+  const url = `${protocol}${host}${uri}${localeParams}`
 
   return fetch(url, { credentials: 'include', headers }).then(res => res.json())
 }
