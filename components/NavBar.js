@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import NavTab from 'react-storefront/nav/NavTab'
 import NavTabs from 'react-storefront/nav/NavTabs'
-import Link from 'react-storefront/link/Link'
+import Link from '../components/Link'
 import { Container, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 

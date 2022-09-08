@@ -1,6 +1,8 @@
 import { spaceId, accessToken } from './config/config.js'
 import Axios from 'axios'
 import { arrayToTree } from 'performant-array-to-tree'
+import { FacetResponseType } from "./types/facet"
+
 const contentful = require('contentful')
 
 export default function getContentFulClient(req) {
@@ -69,7 +71,7 @@ export default function getContentFulClient(req) {
     return _categoryTree
   }
 
-  const getFacets = async ({ locale = 'en-CA' } = {}): Promise<FacetResponse[]> => {
+  const getFacets = async ({ locale = 'en-CA' } = {}): Promise<FacetResponseType[]> => {
     const { data } = await Axios.post(
       `https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`,
       {

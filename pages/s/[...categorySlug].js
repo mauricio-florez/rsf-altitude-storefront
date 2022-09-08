@@ -12,7 +12,7 @@ import ProductItem from '../../components/product/ProductItem'
 import ShowMore from 'react-storefront/plp/ShowMore'
 import BackToTop from 'react-storefront/BackToTop'
 import Filter from 'react-storefront/plp/Filter'
-import SearchResultsProvider from 'react-storefront/plp/SearchResultsProvider'
+import SearchResultsProvider from '../../components/plp/searchResultsProvider'
 import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 import FilterButton from 'react-storefront/plp/FilterButton'
 import SortButton from 'react-storefront/plp/SortButton'
@@ -206,8 +206,6 @@ const Subcategory = lazyProps => {
 }
 
 Subcategory.getInitialProps = createLazyProps(opts => {
-  const { res } = opts
-  if (res) res.setHeader('Cache-Control', 'max-age=99999')
   return customFetchFromAPI(opts)
 })
 
