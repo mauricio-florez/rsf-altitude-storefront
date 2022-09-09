@@ -21,7 +21,31 @@ const useStyles = makeStyles(theme => ({
 export default function Index(lazyProps) {
   const classes = useStyles()
   const [state] = useLazyState(lazyProps)
-  const { hero, collections } = state.pageData.slots
+
+  const renderHero = () => {
+    const { hero } = state.pageData.slots
+
+    return (
+      <Hero
+        title={hero.title}
+        ctaLabel={hero.ctaLabel}
+        image1={hero.image1}
+        image2={hero.image2}
+        image3={hero.image3}
+      />
+    )
+  }
+  const renderCollections = () => {
+    const { collections } = state.pageData.slots
+
+    return (
+      <HomeCollection
+        ctaLabel={collections.ctaLabel}
+        ctaUrl={collections.ctaUrl}
+        collections={collections.collections}
+      />
+    )
+  }
 
   return (
     <>
@@ -30,26 +54,14 @@ export default function Index(lazyProps) {
           <Head>
             <title>{state.pageData.title}</title>
           </Head>
-          <Hero
-            title={hero.title}
-            ctaLabel={hero.ctaLabel}
-            image1={hero.image1}
-            image2={hero.image2}
-            image3={hero.image3}
-          />
+          {renderHero()}
         </>
       )}
       <Container maxWidth="lg">
         {state.loading ? (
           <LoadMask fullscreen />
         ) : (
-          <div className={classes.main}>
-            <HomeCollection
-              ctaLabel={collections.ctaLabel}
-              ctaUrl={collections.ctaUrl}
-              collections={collections.collections}
-            />
-          </div>
+          <div className={classes.main}>{renderCollections()}</div>
         )}
       </Container>
     </>
