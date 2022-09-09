@@ -56,8 +56,4 @@ export default function Index(lazyProps) {
   )
 }
 
-Index.getInitialProps = createLazyProps(options => {
-  const { res } = options
-  if (res) res.setHeader('Cache-Control', 'max-age=99999')
-  return customFetchFromAPI(options)
-})
+Index.getInitialProps = createLazyProps(customFetchFromAPI)

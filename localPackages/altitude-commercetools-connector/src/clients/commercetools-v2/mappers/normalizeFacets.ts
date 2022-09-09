@@ -1,10 +1,11 @@
+import { ContentfulFacetResponse } from "../types"
 import { FacetResponseType, PlpFacetOptionsType, PlpFacetType } from "../types/facets"
 
 
-const normalizeFacets = (facets: FacetResponseType): PlpFacetType[] =>
-  Object.keys(facets).map(key => ({
-    name: key,
-    options: normalizeFacetsTerms(key, facets),
+const normalizeFacets = (facetResponse: FacetResponseType, facet: ContentfulFacetResponse[]): PlpFacetType[] =>
+  Object.keys(facetResponse).map(key => ({
+    name: facet.find(f => f.field === key).label,
+    options: normalizeFacetsTerms(key, facetResponse),
     ui: "checkboxes"
   }))
 
