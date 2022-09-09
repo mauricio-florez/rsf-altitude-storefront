@@ -3,10 +3,9 @@ import createAppData from './clients/commercetools-v2/utils/createAppData'
 import getContentFulClient from './clients/contentful/contentful-client'
 import normalizeContentfulHomeCollections from './clients/contentful/mappers/content-types/normalizeHomeCollections'
 import normalizeContentfulHero from './clients/contentful/mappers/content-types/normalizeHero'
-import { getLocale } from './clients/utils/index.ts'
 
-export default async function home(req, res) {
-  const locale = getLocale({ host: req.headers.host })
+export default async function home(req) {
+  const { locale } = req.query
   const contentfulClient = await getContentFulClient()
   
   const rawContentfulHero = await contentfulClient.getEntries({
