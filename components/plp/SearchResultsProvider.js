@@ -173,7 +173,6 @@ export default function SearchResultsProvider({ store, updateStore, queryForStat
    */
   const getURLForState = query => {
     const { pathname, hash } = window.location
-    debugger
     return pathname + qs.stringify(query, { addQueryPrefix: true }) + hash
   }
 
