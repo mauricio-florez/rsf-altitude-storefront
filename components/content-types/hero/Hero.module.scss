@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  height: 85vh;
+  min-height: 15rem;
+  padding: 3rem 2rem;
+  overflow: hidden;
+  background-color: #000000;
+
+  .content {
+    display: flex;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+
+    .headline {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      align-items: center;
+      z-index: 5;
+      left: 0;
+      bottom: 15%;
+
+      @media (min-width: 600px) {
+        width: 60%;
+        align-items: flex-start;
+        justify-content: start;
+        height: unset;
+      }
+
+      .title {
+        line-height: 1.2;
+        font-size: max(7vmin, 2.8rem);
+        color: #ffffff;
+      }
+    }
+    .overlap_images {
+      flex: 1 1 0px;
+      position: relative;
+
+      .image_1 {
+        position: absolute;
+        width: 50%;
+        top: 0;
+        right: 0;
+
+        @media (min-width: 600px) {
+          width: 45%;
+        }
+      }
+      .image_2 {
+        width: 40%;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        z-index: 1;
+
+        @media (min-width: 600px) {
+          width: 25%;
+        }
+      }
+      .image_3 {
+        width: 40%;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+
+        @media (min-width: 600px) {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,59 @@
+@import "altitude-designsystem/packages/design-tokens/build/index.scss";
+
+.container {
+  letter-spacing: 0.7px;
+  position: relative;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  width: 24rem;
+  height: 4.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: $component-button-primary-color-background;
+  color: $component-button-primary-color-content;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s;
+
+  &:hover:after {
+    content: '→';
+    position: absolute;
+    animation: slideright 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    right: 2.5rem;
+
+    @keyframes slideright {
+      0% {
+        right: 2.8rem;
+      }
+    }
+  }
+}
+
+.solid {
+  &:hover {
+    background-color: $component-button-primary-hover-background;
+    color: $component-button-primary-color-background;
+  }
+}
+
+.outline {
+  border: 1px solid $component-button-primary-color-content;
+
+  &:hover {
+    color: $component-button-primary-hover-background;
+    border: 1px solid $component-button-primary-hover-background;
+  }
+}
+
+.flat {
+  background-color: transparent;
+
+  &:hover:after {
+    position: unset;
+  }
+}
