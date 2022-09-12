@@ -1,0 +1,165 @@
+$black: #000;
+$grey: #85888C;
+$White: #fff;
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: $black;
+    overflow: hidden;
+    left: 0;
+    top:63px;
+    
+}
+
+.menu a{
+    color:  $White;
+    display: block;
+    margin: 30px;
+    font-size: 2em;
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+    padding: 0 0 10px;
+
+}
+
+.menu a:hover{
+    background-color: $grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 70px;
+  background-color: $White;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: $black;
+  padding: 20px;
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+
+.hamburger{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamburger-line {
+    background: $black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    
+}
+
+.hamburger-line::before,
+.hamburger-line::after{
+    background: $black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamburger-line::before{
+    top: 5px;
+}
+
+.hamburger-line::after{
+    top: -5px;
+}
+
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+        overflow: inherit;
+
+    }
+    .nav a {
+      font-size: 1em;
+      color: $black;
+    }
+
+    .menu li{
+        float: left;
+        position: relative;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color: $grey;
+        
+    }
+    
+    .hamburger{
+        display: none;
+    }
+
+    .menu li:hover .dropdown-content {
+      display: block;
+      font-size: 1.1em;
+    
+      a {
+        margin: 0px 30px 0px 10px;
+      }
+    }
+    
+}
