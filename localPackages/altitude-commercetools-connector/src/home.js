@@ -7,13 +7,11 @@ export default async function home(req, res) {
     appData: () => createAppData({ locale }),
     pageData: () =>
       Promise.resolve({
-        title: 'React Storefront | Commercetools Connector',
+        title: 'Altitude Storefront',
+        description: 'This is the main page for Altitude Storefront',
         slots: {
-          heading: 'Welcome',
+          heading: 'Welcome to Altitude Storefront Skeleton',
           description: `
-                <p>
-                Enjoy our Commercetools Connector.
-              </p>
               <p>Happy coding!</p>
             `,
         },

@@ -114,7 +114,12 @@ const Subcategory = lazyProps => {
       <Breadcrumbs items={!loading && pageData.breadcrumbs} />
       <SearchResultsProvider store={store} updateStore={updateStore} queryForState={queryForState}>
         <Container maxWidth="lg" style={{ paddingTop: theme.spacing(2) }}>
-          <Head>{loading ? null : <title>{pageData.title}</title>}</Head>
+          {!loading && (
+            <Head>
+              <title>{pageData.title}</title>
+              <meta name="description" content={pageData.description} />
+            </Head>
+          )}
           <BackToTop />
           <Hbox align="flex-start">
             <Hidden implementation="css" xsDown>

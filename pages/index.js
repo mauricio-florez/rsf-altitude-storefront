@@ -21,12 +21,12 @@ const useStyles = makeStyles(theme => ({
 export default function Index(lazyProps) {
   const classes = useStyles()
   const [state] = useLazyState(lazyProps)
-
   return (
     <>
-      {state.loading ? null : (
+      {!state.loading && (
         <Head>
           <title>{state.pageData.title}</title>
+          <meta name="description" content={state.pageData.description} />
         </Head>
       )}
       <Container maxWidth="lg">
