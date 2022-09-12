@@ -55,7 +55,11 @@ export default function Header({ menu, categoryTree }) {
   // This is only supported for two languages 
   // Going international will require a more elaborated solution
   const switchLocale = locale === 'en-CA' ? 'fr-CA' : 'en-CA'
+  // Remove unnecessary query strings in url (added by layer0 prod)
+  // TODO: implement a white-list functionality to preserve queries needed such as filters, order etc
+  // using a component forcing the reload. (App data needs to be consumed by parent components ?app before render)
   const newLocalePath = removeLocaleFromPath({path: asPath})
+  const uri = newLocalePath.substring(0, newLocalePath.indexOf('?')) || newLocalePath
 
   return (
     <>
@@ -69,7 +73,7 @@ export default function Header({ menu, categoryTree }) {
           {categoryTree && (<NavigationBar tabs={categoryTree} />)}
           <Search />
           <CartButton quantity={get(session, 'itemsInCart')} />
-          <a className={classes.a} href={`/${switchLocale}${newLocalePath}`}>
+          <a className={classes.a} href={`/${switchLocale}${uri}`}>
             {switchLocale}
           </a>
         </Container>
