@@ -15,6 +15,8 @@ import { Prefetch } from '@layer0/react'
 import Link from 'next/link'
 import { createNextDataURL } from '@layer0/next/client'
 
+import './styles.scss'
+
 const styles = theme => ({
   main: {
     paddingTop: 3,
