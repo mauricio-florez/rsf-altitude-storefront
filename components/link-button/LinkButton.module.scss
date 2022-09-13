@@ -16,8 +16,8 @@
   height: 4.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  background-color: $component-button-primary-color-background;
-  color: $component-button-primary-color-content;
+  background-color: $components-button-action-color-background-primary-default;
+  color: $components-button-action-color-text-primary-default;
   transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s;
 
   &:hover:after {
@@ -36,17 +36,17 @@
 
 .solid {
   &:hover {
-    background-color: $component-button-primary-hover-background;
-    color: $component-button-primary-color-background;
+    background-color: $components-button-primary-hover-background;
+    color: $components-button-primary-color-background;
   }
 }
 
 .outline {
-  border: 1px solid $component-button-primary-color-content;
+  border: 1px solid $components-button-primary-color-content;
 
   &:hover {
-    color: $component-button-primary-hover-background;
-    border: 1px solid $component-button-primary-hover-background;
+    color: $components-button-primary-hover-background;
+    border: 1px solid $components-button-primary-hover-background;
   }
 }
 

@@ -3,6 +3,10 @@ const styleDictionaryPackage = require('style-dictionary')
 
 const brand = process.env.BRAND || 'vallier'
 const buildDirectoryPath = 'build/'
+const sharedFilesOptions = {
+  filter: { attributes: { category: "component" } },
+  options: { showFileHeader: false }
+}
 
 const cleanBuildFolder = (path) => {
   if (fs.existsSync(path)) {
@@ -16,8 +20,7 @@ const getStyleDictionaryConfig = (brand) => {
   return {
     source: [
       './src/tiers/core/*.json',
-      `./src/tiers/brand/${brand}/**/*.json`,
-      './src/tiers/component/*.json'
+      `./src/tiers/component/${brand}/**/*.json`
     ],
     platforms: {
       css: {
@@ -26,9 +29,7 @@ const getStyleDictionaryConfig = (brand) => {
         files: [{
           destination: 'index.scss',
           format: 'scss/variables',
-          options: {
-            showFileHeader: false
-          }
+          ...sharedFilesOptions
         }]
       },
       js: {
@@ -37,9 +38,7 @@ const getStyleDictionaryConfig = (brand) => {
         files: [{
           destination: 'index.js',
           format: 'javascript/module',
-          options: {
-            showFileHeader: false
-          }
+          ...sharedFilesOptions
         }]
       }
     }

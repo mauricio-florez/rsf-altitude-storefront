@@ -1,0 +1,64 @@
+{
+  "component": {
+    "button": {
+      "action": {
+        "color": {
+          "background": {
+            "primary": {
+              "positive": {
+                "normal": { "value": "{ core.color.dark-pastel-green.base }" },
+                "hover": { "value": "{ core.color.grey.1000 }" }
+              },
+              "negative": {
+                "normal": { "value": "{ core.color.grey.1000 }" },
+                "hover": { "value": "{ core.color.dark-pastel-green.base }" }
+              }
+            },
+            "secondary": {
+              "positive": {
+                "normal": { "value": "{ core.color.grey.1000 }" },
+                "hover": { "value": "{ core.color.grey.1000 }" }
+              }
+            }
+          },
+          "border": {
+            "primary": {
+              "positive": {
+                "normal": { "value": "{ core.color.dark-pastel-green.base }" },
+                "hover": { "value": "{ core.color.grey.1000 }" }
+              },
+              "negative": {
+                "normal": { "value": "{ core.color.grey.1000 }" },
+                "hover": { "value": "{ core.color.dark-pastel-green.base }" }
+              }
+            },
+            "secondary": {
+              "positive": {
+                "normal": { "value": "{ core.color.grey.0 }" },
+                "hover": { "value": "{ core.color.dark-pastel-green.base }" }
+              }
+            }
+          },
+          "text": {
+            "primary": {
+              "positive": {
+                "normal": { "value": "{ core.color.grey.1000 }" },
+                "hover": { "value": "{ core.color.grey.0 }" }
+              },
+              "negative": {
+                "normal": { "value": "{ core.color.grey.0 }" },
+                "hover": { "value": "{ core.color.grey.1000 }" }
+              }
+            },
+            "secondary": {
+              "positive": {
+                "normal": { "value": "{ core.color.grey.0 }" },
+                "hover": { "value": "{ core.color.dark-pastel-green.base }" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
