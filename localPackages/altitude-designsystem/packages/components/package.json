@@ -1,0 +1,37 @@
+{
+  "name": "@altitude-designsystem/components",
+  "description": "Altitude Design System: Components package",
+  "author": "Altitude Sports",
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "private": true,
+  "main": "build/index.js",
+  "files": [
+    "build/index.js"
+  ],
+  "scripts": {
+    "build": "npm run subscript:build:clean && npm run subscript:build:exec",
+    "clean": "npm run subscript:build:clean",
+    "subscript:build:clean": "rm -rf build/**/*",
+    "subscript:build:exec": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@altitude-designsystem/designtokens": "file:../design-tokens",
+    "@babel/core": "7.19.0",
+    "@babel/preset-env": "7.19.0",
+    "@babel/preset-react": "7.18.6",
+    "@rollup/plugin-babel": "5.3.1",
+    "@rollup/plugin-commonjs": "22.0.2",
+    "@rollup/plugin-node-resolve": "14.1.0",
+    "postcss": "8.4.16",
+    "postcss-easy-import": "4.0.0",
+    "rollup": "2.79.0",
+    "rollup-plugin-node-externals": "5.0.0",
+    "rollup-plugin-postcss": "4.0.2"
+  },
+  "peerDependencies": {
+    "prop-types": "15.8.1",
+    "react": "17.0.1"
+  }
+}

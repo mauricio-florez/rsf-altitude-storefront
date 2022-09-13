@@ -1,0 +1,5377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Button Block 1`] = `
+Array [
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+]
+`;
+
+exports[`Component: Button Disabled 1`] = `
+Array [
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 24px;
+  padding: 18px 34px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="large"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="pill"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+]
+`;
+
+exports[`Component: Button Disabled Negative 1`] = `
+Array [
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 24px;
+  padding: 18px 34px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="large"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="pill"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+  color: #636363;
+  background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 10px 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c0:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  color: #636363;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    disabled={true}
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+]
+`;
+
+exports[`Component: Button Levels 1`] = `
+Array [
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+]
+`;
+
+exports[`Component: Button Levels Negative 1`] = `
+Array [
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+]
+`;
+
+exports[`Component: Button Sizes 1`] = `
+Array [
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  font-size: 24px;
+  padding: 18px 34px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="large"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="pill"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 16px;
+  padding: 10px 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+]
+`;
+
+exports[`Component: Button Sizes Negative 1`] = `
+Array [
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  font-size: 24px;
+  padding: 18px 34px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="large"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="pill"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="small"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+]
+`;
+
+exports[`Component: Button With Icon 1`] = `
+Array [
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c4 .c2 {
+  margin-left: 8px;
+}
+
+.c5 .c2 {
+  margin-right: 8px;
+}
+
+.c6 .c2 {
+  margin-left: 8px;
+}
+
+.c7 .c2 {
+  margin-right: 8px;
+}
+
+.c8 .c2 {
+  margin-left: 8px;
+}
+
+.c9 .c2 {
+  margin-right: 8px;
+}
+
+.c10 .c2 {
+  margin-left: 8px;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-left: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c5 .c2 {
+  margin-right: 8px;
+}
+
+.c6 .c2 {
+  margin-left: 8px;
+}
+
+.c7 .c2 {
+  margin-right: 8px;
+}
+
+.c8 .c2 {
+  margin-left: 8px;
+}
+
+.c9 .c2 {
+  margin-right: 8px;
+}
+
+.c10 .c2 {
+  margin-left: 8px;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c6 .c2 {
+  margin-left: 8px;
+}
+
+.c7 .c2 {
+  margin-right: 8px;
+}
+
+.c8 .c2 {
+  margin-left: 8px;
+}
+
+.c9 .c2 {
+  margin-right: 8px;
+}
+
+.c10 .c2 {
+  margin-left: 8px;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #e8114b;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15),0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-left: 8px;
+}
+
+.c0:hover {
+  background-color: #b90e3c;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15),0px 3px 7px 0px rgba(0,0,0,0.25);
+  border-color: transparent;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #f03d6d;
+}
+
+.c0:hover {
+  background-color: #f03d6d;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+}
+
+.c0:active {
+  background-color: #b90e3c;
+}
+
+.c7 .c2 {
+  margin-right: 8px;
+}
+
+.c8 .c2 {
+  margin-left: 8px;
+}
+
+.c9 .c2 {
+  margin-right: 8px;
+}
+
+.c10 .c2 {
+  margin-left: 8px;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c8 .c2 {
+  margin-left: 8px;
+}
+
+.c9 .c2 {
+  margin-right: 8px;
+}
+
+.c10 .c2 {
+  margin-left: 8px;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c8 .c2 {
+  margin-right: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-left: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c9 .c2 {
+  margin-right: 8px;
+}
+
+.c10 .c2 {
+  margin-left: 8px;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c8 .c2 {
+  margin-right: 8px;
+}
+
+.c9 .c2 {
+  margin-left: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c10 .c2 {
+  margin-left: 8px;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c8 .c2 {
+  margin-right: 8px;
+}
+
+.c9 .c2 {
+  margin-left: 8px;
+}
+
+.c10 .c2 {
+  margin-right: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px #2d35cd;
+  color: #2d35cd;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-left: 8px;
+}
+
+.c0:hover {
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  border-color: #ffffff;
+  background-color: #2d35cd;
+  color: #ffffff;
+}
+
+.c0:active {
+  background-color: #555ef6;
+}
+
+.c0:hover {
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #ffffff;
+  color: #2d35cd;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c11 .c2 {
+  margin-right: 8px;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c8 .c2 {
+  margin-right: 8px;
+}
+
+.c9 .c2 {
+  margin-left: 8px;
+}
+
+.c10 .c2 {
+  margin-right: 8px;
+}
+
+.c11 .c2 {
+  margin-left: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c12 .c2 {
+  margin-left: 8px;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c8 .c2 {
+  margin-right: 8px;
+}
+
+.c9 .c2 {
+  margin-left: 8px;
+}
+
+.c10 .c2 {
+  margin-right: 8px;
+}
+
+.c11 .c2 {
+  margin-left: 8px;
+}
+
+.c12 .c2 {
+  margin-right: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-left: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c13 .c2 {
+  margin-right: 8px;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c8 .c2 {
+  margin-right: 8px;
+}
+
+.c9 .c2 {
+  margin-left: 8px;
+}
+
+.c10 .c2 {
+  margin-right: 8px;
+}
+
+.c11 .c2 {
+  margin-left: 8px;
+}
+
+.c12 .c2 {
+  margin-right: 8px;
+}
+
+.c13 .c2 {
+  margin-left: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-right: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c14 .c2 {
+  margin-left: 8px;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+  </button>,
+  .c3 {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.c3 svg {
+  display: block;
+}
+
+.c4 .c2 {
+  margin-right: 8px;
+}
+
+.c5 .c2 {
+  margin-left: 8px;
+}
+
+.c6 .c2 {
+  margin-right: 8px;
+}
+
+.c7 .c2 {
+  margin-left: 8px;
+}
+
+.c8 .c2 {
+  margin-right: 8px;
+}
+
+.c9 .c2 {
+  margin-left: 8px;
+}
+
+.c10 .c2 {
+  margin-right: 8px;
+}
+
+.c11 .c2 {
+  margin-left: 8px;
+}
+
+.c12 .c2 {
+  margin-right: 8px;
+}
+
+.c13 .c2 {
+  margin-left: 8px;
+}
+
+.c14 .c2 {
+  margin-right: 8px;
+}
+
+.c0 {
+  font-family: 'LATAM Sans','Trebuchet MS',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: none;
+  color: #2d35cd;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #ffffff;
+}
+
+.c0 > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c0 .c2 {
+  margin-left: 8px;
+}
+
+.c0:hover {
+  background-color: #e2e3fd;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #67a2fa;
+  background-color: #e2e3fd;
+  border-color: #ffffff;
+}
+
+.c0:active {
+  background-color: #caccfc;
+}
+
+.c0:hover {
+  background-color: #5b61f6;
+}
+
+.c0:focus {
+  border-color: #1c008a;
+  background-color: #5b61f6;
+}
+
+.c0:active {
+  background-color: #7c83f8;
+}
+
+.c1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
+  white-space: nowrap;
+}
+
+<button
+    className="c0"
+    size="medium"
+  >
+    <span
+      className="c1"
+    >
+      Go to the next step
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      Continue
+    </span>
+    <i
+      aria-hidden="true"
+      className="c2 c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg focusable=\\"false\\" viewBox=\\"0 0 20 20\\"><path fill=\\"currentColor\\" d=\\"M4.4 11.5L9 6.8V17h2V6.8l4.6 4.6L17 10l-7-7-7 7.1z\\"/></svg>",
+        }
+      }
+      name="arrow-up"
+      size="medium"
+    />
+  </button>,
+]
+`;

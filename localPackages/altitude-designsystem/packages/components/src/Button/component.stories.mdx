@@ -1,0 +1,191 @@
+import { Meta, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import * as DesignTokens from '@aerea/design-tokens'
+import { Button } from './';
+import { Icon } from './../icon';
+
+export const demoIconCaretRight = <Icon family="interaction" name="caret-right" size="large" />
+export const demoIconPrinter = <Icon family="interaction" name="print" size="large" />
+
+<Meta title="Components | Button" component={Button} />
+
+# Button
+
+`Button` es el **componente atómico** que define el elemento de interfaz interactuable.
+
+## Uso
+
+Importar el componente requerido desde la dependencia `@aerea/components` en la aplicación:
+
+```js
+import { Button } from "@aerea/components";
+```
+
+## Propiedades
+
+Matriz detallada de las propiedades disponibles para este componente.
+
+<Props of={Button} />
+
+## Escenarios
+
+### Basic
+
+```js
+<Button>Continue</Button>
+```
+
+### Levels
+
+<Preview>
+  <Story name="Level Primary">
+    <Button>Continue</Button>
+  </Story>
+  <Story name="Level Secondary">
+    <Button level="secondary">Continue</Button>
+  </Story>
+  <Story name="Level Tertiary">
+    <Button level="tertiary">Continue</Button>
+  </Story>
+</Preview>
+
+<Preview  style={{backgroundColor: DesignTokens.ColorBaseIndigo}}>
+  <Story name="Level Primary Negative">
+    <Button theme="negative">Continue</Button>
+  </Story>
+  <Story name="Level Secondary Negative">
+    <Button theme="negative" level="secondary">Continue</Button>
+  </Story>
+  <Story name="Level Tertiary Negative">
+    <Button theme="negative" level="tertiary">Continue</Button>
+  </Story>
+</Preview>
+
+### Size
+
+#### Primary
+
+<Preview>
+  <Story name="Size Primary Large">
+    <Button level="primary" size="large">Continue</Button>
+  </Story>
+  <Story name="Size Primary Medium">
+    <Button>Continue</Button>
+  </Story>
+  <Story name="Size Primary Small">
+    <Button level="primary" size="small">Continue</Button>
+  </Story>
+</Preview>
+
+<Preview  style={{backgroundColor: DesignTokens.ColorBaseIndigo}}>
+  <Story name="Size Primary Large Negative">
+    <Button level="primary" size="large" theme="negative">Continue</Button>
+  </Story>
+  <Story name="Size Primary Medium Negative">
+    <Button theme="negative">Continue</Button>
+  </Story>
+  <Story name="Size Primary Small Negative">
+    <Button level="primary" size="small" theme="negative">Continue</Button>
+  </Story>
+</Preview>
+
+#### Secondary
+
+<Preview>
+  <Story name="Size Secondary Medium">
+    <Button level="secondary">Continue</Button>
+  </Story>
+  <Story name="Size Secondary Small">
+    <Button level="secondary" size="small">Continue</Button>
+  </Story>
+  <Story name="Size Secondary Pill">
+    <Button level="secondary" size="pill">Continue</Button>
+  </Story>
+</Preview>
+
+<Preview  style={{backgroundColor: DesignTokens.ColorBaseIndigo}}>
+  <Story name="Size Secondary Medium Negative">
+    <Button level="secondary" theme="negative">Continue</Button>
+  </Story>
+  <Story name="Size Secondary Small Negative">
+    <Button level="secondary" size="small" theme="negative">Continue</Button>
+  </Story>
+  <Story name="Size Secondary Pill Negative">
+    <Button level="secondary" size="pill" theme="negative">Continue</Button>
+  </Story>
+</Preview>
+
+#### Tertiary
+
+<Preview>
+  <Story name="Size Tertiary Medium">
+    <Button level="tertiary">Continue</Button>
+  </Story>
+  <Story name="Size Tertiary Small">
+    <Button level="tertiary" size="small">Continue</Button>
+  </Story>
+</Preview>
+
+<Preview  style={{backgroundColor: DesignTokens.ColorBaseIndigo}}>
+  <Story name="Size Tertiary Medium Negative">
+    <Button level="tertiary" theme="negative">Continue</Button>
+  </Story>
+  <Story name="Size Tertiary Small Negative">
+    <Button level="tertiary" size="small" theme="negative">Continue</Button>
+  </Story>
+</Preview>
+
+### Block
+
+<Preview>
+  <Story name="Block">
+    <Button block>Continue</Button>
+  </Story>
+</Preview>
+
+### Accessibility
+
+Este caso cuenta con una propiedad llamada `alternativeText` que permite asignar una palabra alternativa al texto visible para los lectores de pantalla.
+
+<Preview>
+  <Story name="With Alternative Text">
+    <Button alternativeText="Continue to next page">Continue</Button>
+  </Story>
+  <Story name="Without Alternative Text">
+    <Button>Continue to next page</Button>
+  </Story>
+</Preview>
+
+### With Icon
+
+<Preview>
+  <Story name="With Icon Left">
+    <Button icon={demoIconPrinter}>Print</Button>
+  </Story>
+  <Story name="With Icon Right">
+    <Button icon={demoIconCaretRight} reverseIconPosition>Continue</Button>
+  </Story>
+</Preview>
+
+<Preview  style={{backgroundColor: DesignTokens.ColorBaseIndigo}}>
+  <Story name="With Icon Left Negative">
+    <Button theme="negative" icon={demoIconPrinter}>Print</Button>
+  </Story>
+  <Story name="With Icon Right Negative">
+    <Button theme="negative" icon={demoIconCaretRight} reverseIconPosition>Continue</Button>
+  </Story>
+</Preview>
+
+### Disabled
+
+<Preview>
+  <Story name="Disabled Primary">
+    <Button disabled>Continue</Button>
+  </Story>
+</Preview>
+
+<Preview style={{backgroundColor: DesignTokens.ColorBaseIndigo}}>
+  <Story name="Disabled Primary Negative">
+    <Button theme="negative" disabled>Continue</Button>
+  </Story>
+</Preview>
