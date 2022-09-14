@@ -12,7 +12,7 @@ function HomeCollection({ ctaLabel, ctaUrl, collections }) {
       <div className={styles.collection_container}>
         {collections.map(({ title, url, image }) => (
           <div key={title} className={styles.collection}>
-            <LinkButton label={title} url={url} variant="flat" className={styles.link} />
+            <LinkButton variant="flat" label={title} url={url} className={styles.link} />
             <Image
               className={styles.image}
               src={image.url}
@@ -25,7 +25,7 @@ function HomeCollection({ ctaLabel, ctaUrl, collections }) {
       </div>
 
       <div className={styles.button_container}>
-        <LinkButton label={ctaLabel} url={ctaUrl} variant="outline" />
+        <LinkButton variant="secondary" label={ctaLabel} url={ctaUrl}  />
       </div>
     </div>
   )

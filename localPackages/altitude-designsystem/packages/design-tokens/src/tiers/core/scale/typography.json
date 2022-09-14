@@ -1,0 +1,22 @@
+{
+  "core": {
+    "scale": {
+      "typography": {
+        "size": {
+          "12": { "value": "{ core.scale.base.12 }" },
+          "14": { "value": "{ core.scale.base.14 }" },
+          "16": { "value": "{ core.scale.base.16 }" },
+          "18": { "value": "{ core.scale.base.18 }" },
+          "20": { "value": "{ core.scale.base.20 }" },
+          "24": { "value": "{ core.scale.base.24 }" }
+        },
+        "lineheight": {
+          "100": { "value": "1" },
+          "125": { "value": "1.25" },
+          "150": { "value": "1.5" },
+          "175": { "value": "1.75" }
+        }
+      }
+    }
+  }
+}

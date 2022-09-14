@@ -1,0 +1,15 @@
+{
+  "core": {
+    "color": {
+      "base": {
+        "grey": {
+          "0": { "value": "hsl(0, 0%, 0%)" },
+          "1000": { "value": "hsl(0, 0%, 100%)" }
+        },
+        "darkpastelgreen": {
+          "base": { "value": "hsl(140, 90%, 38%)" }
+        }
+      }
+    }
+  }
+}

@@ -5,12 +5,9 @@
   "license": "UNLICENSED",
   "version": "0.0.0",
   "private": true,
-  "main": "build/index.scss",
-  "style": "build/index.scss",
-  "files": [
-    "build/index.scss",
-    "build/index.js"
-  ],
+  "main": "build/css/component.scss",
+  "style": "build/css/component.scss",
+  "files": ["build/"],
   "scripts": {
     "build": "npm run subscript:build:clean && npm run subscript:build:exec",
     "clean": "npm run subscript:build:clean",

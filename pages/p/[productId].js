@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect, useRef } from 'react'
-import clsx from 'clsx'
 import qs from 'qs'
 import useLazyState from 'react-storefront/hooks/useLazyState'
 import Breadcrumbs from 'react-storefront/Breadcrumbs'
@@ -18,11 +17,9 @@ import fetch from 'react-storefront/fetch'
 import { fetchLatest, StaleResponseError } from 'react-storefront/utils/fetchLatest'
 import SessionContext from 'react-storefront/session/SessionContext'
 import AddToCartConfirmation from '../../components/product/AddToCartConfirmation'
-import SuggestedProducts from '../../components/product/SuggestedProducts'
-import Lazy from 'react-storefront/Lazy'
+import LinkButton from '../../components/link-button/LinkButton'
 import TabPanel from 'react-storefront/TabPanel'
 import QuantitySelector from 'react-storefront/QuantitySelector'
-// import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 import customFetchFromAPI from '../utils/customFetchFromAPI'
 import createLazyProps from 'react-storefront/props/createLazyProps'
 import Head from 'next/head'
@@ -251,18 +248,7 @@ const Product = React.memo(lazyProps => {
                   </Hbox>
                 </Grid>
                 <Grid item xs={12}>
-                  <Button
-                    key="button"
-                    type="submit"
-                    variant="contained"
-                    color="primary"
-                    size="large"
-                    data-th="add-to-cart"
-                    className={clsx(classes.docked, classes.noShadow)}
-                    disabled={addToCartInProgress}
-                  >
-                    Add to Cart
-                  </Button>
+                  <LinkButton label="Buy on Altitude Sports"  />
                   <AddToCartConfirmation
                     open={confirmationOpen}
                     setOpen={setConfirmationOpen}
