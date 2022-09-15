@@ -53,6 +53,7 @@ export default function Index(lazyProps) {
         <>
           <Head>
             <title>{state.pageData.title}</title>
+            <meta name="description" content={state.pageData.description} />
           </Head>
           {renderHero()}
         </>
