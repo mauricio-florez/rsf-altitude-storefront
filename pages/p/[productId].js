@@ -7,8 +7,6 @@ import PWAContext from 'react-storefront/PWAContext'
 import { Container, Grid, Typography, Hidden } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
 import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Row from 'react-storefront/Row'
 import { Hbox } from 'react-storefront/Box'
@@ -193,7 +191,7 @@ const Product = React.memo(lazyProps => {
                   <LinkButton label="Buy on Altitude Sports" />
                 </Grid>
                 <Grid item xs={12}>
-                  {product && product.specs ? (
+                  {product && product.specs.length ? (
                     <>
                       <Hbox style={{ marginBottom: theme.spacing(2) }}>
                         <Label style={{ fontSize: 12, fontWeight: 'bold', textTransform: 'uppercase' }}>Details</Label>

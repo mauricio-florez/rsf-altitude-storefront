@@ -1,5 +1,6 @@
 import fetch from 'react-storefront/fetch'
 import getAPIURL from 'react-storefront/api/getAPIURL'
+import { removeLocaleFromPath } from '../../components/utils/localization' 
 
 // TODO: Evaluate if this strategy is appropriate in the future, it may cause desynchronization with rsf packages
 
@@ -45,8 +46,7 @@ export default function customFetchFromAPI({ req, asPath, pathname, locale='en-C
     }
   }
 
-  const regex = new RegExp(`\^\/${locale}\/?`);
-  asPath = asPath.replace(regex, '/')
+  asPath = removeLocaleFromPath({path: asPath})
 
   let uri = getAPIURL(asPath)
   let headers = {}

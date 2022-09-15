@@ -1,6 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
-import Link from 'react-storefront/link/Link'
+import Link from './../Link'
 import styles from './LinkButton.module.scss'
 
 /**

@@ -25,7 +25,7 @@ export default async function product({ id }, req) {
 
 async function getPageData(prod, normalizedEntry) {
   const result = {
-    title: prod.name,
+    title: `Altitude Storefront | ${prod.name}`,
     description: prod.description,
     product: prod,
     breadcrumbs: [

@@ -28,7 +28,8 @@ async function getPageData({ params, req, locale }) {
   return {
     id: category.id,
     name: categoryName,
-    title: categoryName,
+    title: `Altitude Storefront | ${categoryName}`,
+    description: `This is the landing page for ${categoryName}`,
     breadcrumbs: [
       {
         text: 'Home',

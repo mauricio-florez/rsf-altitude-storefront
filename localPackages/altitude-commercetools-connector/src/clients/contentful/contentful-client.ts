@@ -1,8 +1,7 @@
 import { spaceId, accessToken } from './config/config.js'
 import Axios from 'axios'
 import { arrayToTree } from 'performant-array-to-tree'
-import { FacetResponseType } from "./types/facet"
-
+import { FacetResponseType } from './types/facet'
 const contentful = require('contentful')
 
 export default function getContentFulClient(req) {
