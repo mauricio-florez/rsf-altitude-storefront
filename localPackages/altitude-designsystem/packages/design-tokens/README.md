@@ -11,8 +11,8 @@ The following types of design tokens are the building blocks and design decision
 Core tokens are the primitive values in Altitude Design System shared language, represented by context-agnostic names. The color palette, animation, typography, and dimension values are all recorded as foundational tokens. These can be directly used, and are inherited by all other token types.
 
 ```scss
-// tier-category-property-{state|scale}
-$altids-core-color-grey-0: ""
+// tier-category-(concept)-property-{state|scale}
+$core-color-base-grey-0: "";
 ```
 
 ### Component
@@ -22,6 +22,6 @@ Component-specific tokens are an exhaustive representation of every value associ
 They are also classified by brand. This makes it possible to introduce _themes_.
 
 ```scss
-// tier-component-concept-category-property-variant-{state|scale}
-$altids-component-button-action-color-background-primary-default: ""
+// tier-component-(concept)-category-property-(variant)-(style)-{state|scale}
+$component-button-action-color-background-primary-style-default: "";
 ```

@@ -16,6 +16,8 @@ const cleanBuildFolder = (path) => {
 }
 
 const getStyleDictionaryConfig = (brand) => {
+  console.log('Brand selected:', `'${brand}'`)
+
   return {
     source: [
       './src/tiers/core/**/*.json',
