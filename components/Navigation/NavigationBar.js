@@ -22,7 +22,8 @@ function NavBar({ tabs }) {
                   <div className={styles['dropdown-content']}>
                     {c.children &&
                       c.children.map(cc => (
-                        <Link key={cc.id} href={`/s/${cc.slug}`}>
+                        <Link className={styles['link--disabled']} key={cc.id} href={`/s/${cc.slug}`}>
+                          {/* TODO: activate these links once the subcategories are created - remove class*/}
                           <a> {cc.name}</a>
                         </Link>
                       ))

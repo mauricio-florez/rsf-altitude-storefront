@@ -2,6 +2,11 @@ $black: #000;
 $grey: #85888C;
 $White: #fff;
 
+.link--disabled {
+    pointer-events: none;
+    color: #85888C;
+}
+
 .nav a {
     text-decoration: none;
 }
@@ -136,6 +141,10 @@ $White: #fff;
     .nav a {
       font-size: 1em;
       color: $black;
+      &.link--disabled {
+            pointer-events: none;
+            color: #85888C;
+        }
     }
 
     .menu li{
