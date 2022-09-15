@@ -103,12 +103,10 @@ export default function normalizeProduct(data, color, size) {
     url: `/p/${id}`,
     name: data.name['en-CA'],
     price: data.price,
-    priceText: `$${data.price}.00`, // n/a
+    priceText: '', // n/a
     // rating: n/a
-    description:
-      'Ex proident nisi laborum et sint aliquip dolor cupidatat pariatur sint reprehenderit incididunt duis. Ipsum fugiat adipisicing excepteur non id aliquip cupidatat culpa ex. Aliquip consectetur tempor voluptate nulla excepteur magna non. Enim enim sunt ea labore ex aliqua qui. Velit sint irure duis excepteur fugiat elit voluptate anim sint. Anim voluptate duis aliqua duis excepteur in labore aliqua. Deserunt dolore incididunt aliquip duis. Fugiat nulla sint esse in et nisi enim sit. Reprehenderit in non labore est sit voluptate ipsum sit. Proident culpa ex mollit minim laboris ipsum incididunt dolore quis proident esse ea.',
-    specs:
-      'Ut ullamco dolor dolor velit nisi consectetur. Exercitation sint eu labore dolore nostrud nostrud occaecat ex nulla. Velit culpa ex quis minim Lorem quis consequat anim excepteur. Irure anim ea dolor minim aute quis anim duis ea duis irure sit Lorem irure. Ad duis officia exercitation aute aute incididunt tempor non in sunt nisi ut. Dolor consequat et sint tempor amet irure voluptate id. Dolore non cupidatat Lorem minim. Velit consectetur id eiusmod ad ea sint voluptate tempor duis quis excepteur. Dolore sunt ullamco est incididunt sit et. Sint aute nulla excepteur exercitation velit non.', // data.longDescription,
+    description: '',
+    specs: [],
     media,
     thumbnail: media.thumbnails[0],
     colors: {},

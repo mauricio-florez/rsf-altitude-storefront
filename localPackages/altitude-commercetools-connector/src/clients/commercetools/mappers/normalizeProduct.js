@@ -1,4 +1,4 @@
-export default function normalizeProduct(data, color, size) {
+export default function normalizeProduct({ data, color, size , locale = 'en-CA'}) {
   // Filter for images supporting type and variations
   const ProductVariants = []
   if (data.masterVariant) ProductVariants.push(data.masterVariant)
@@ -89,34 +89,56 @@ export default function normalizeProduct(data, color, size) {
     }
   }
 
-  const locale = 'en-CA'
   const id = data.id
   const url = `/p/${id}`
   const name = data.name[locale]
   const brand = 'Vallier'
   const price = '879.99'
   const priceText = `$${price}`
-  const description = data.description[locale]
-  const specs = [
-    'Bluesign® certified fabrics',
-    'Crafted with OEKO-TEX® STANDARD 100 certified materials',
-    'Exterior fabric : 100% polyester Toray plain weave fabric',
-    'Secondary fabric : 100% Recycled Polyester Light Downproof Plain Weave',
-    '10,000 mm waterproofness/10,000 g/m² breathability',
-    '90/10 800FP RDS-certified grey goose down insulation',
-    'Adjustable hood',
-    'Seams sealed at critical points',
-    'Baffled construction on the lower part of the jacket',
-    'Draft tube at the neck',
-    'Fleece-lined zippered side pockets',
-    'Microfleece chin guard',
-    'Two-way zipper',
-    'Underarm panels for better mobility',
-    'Articulated sleeves',
-    'Tonal Vallier logo on left sleeve',
-    'Designed in Montreal, made in China',
-    'The model is 5\'6"/171cm and wears a size S'
-  ]
+  const description = data.description ? data.description[locale] : 'desc'
+  const specs = {
+    'en-CA': [
+      'Bluesign® certified fabrics',
+      'Crafted with OEKO-TEX® STANDARD 100 certified materials',
+      'Exterior fabric : 100% polyester Toray plain weave fabric',
+      'Secondary fabric : 100% Recycled Polyester Light Downproof Plain Weave',
+      '10,000 mm waterproofness/10,000 g/m² breathability',
+      '90/10 800FP RDS-certified grey goose down insulation',
+      'Adjustable hood',
+      'Seams sealed at critical points',
+      'Baffled construction on the lower part of the jacket',
+      'Draft tube at the neck',
+      'Fleece-lined zippered side pockets',
+      'Microfleece chin guard',
+      'Two-way zipper',
+      'Underarm panels for better mobility',
+      'Articulated sleeves',
+      'Tonal Vallier logo on left sleeve',
+      'Designed in Montreal, made in China',
+      'The model is 5\'6"/171cm and wears a size S'
+    ],
+    'fr-CA': [
+      'Tissus certifiés Bluesign®',
+      'Confectionné avec des matériaux certifiés OEKO-TEX® STANDARD 100',
+      'Étoffe extérieure : tissu armure toile Toray 100 % polyester',
+      'Étoffe secondaire : tissu armure toile antifuite de duvet 100 % polyester recyclé',
+      'Cote d’imperméabilité de 10 000 mm/cote de respirabilité de 10 000 g/m²',
+      'Isolant en duvet d’oie cendrée 90/10 avec facteur de gonflement de 800 certifié RDS',
+      'Capuchon réglable',
+      'Coutures scellées aux endroits critiques',
+      'Construction à cloisons sur la partie inférieure du manteau',
+      'Bourrelet coupe-froid à l’intérieur du col',
+      'Poches latérales à glissière doublées en molleton',
+      'Protège-menton en micromolleton',
+      'Glissière bidirectionnelle',
+      'Panneaux sous les bras offrant une grande liberté de mouvement',
+      'Manches articulées',
+      'Logo Vallier ton sur ton sur la manche gauche',
+      'Conçu à Montréal, fabriqué en Chine',
+      'Le mannequin mesure 5\'6"/171cm et porte une taille P'
+    ]
+  }
+  
   const media = { full: [getImages2('mainImage')], thumbnails: [getImages2('mainImage')] }
   const thumbnail = media.thumbnails[0]
   const colors = {}
@@ -133,12 +155,13 @@ export default function normalizeProduct(data, color, size) {
     priceText,
     // rating: n/a
     description,
-    specs,
+    specs: specs[locale],
     media,
     thumbnail,
     colors,
     sizes,
     quantity,
+    category: {id: data.categories[0].id},
     raw // TODO: Remove later
   }
 }
