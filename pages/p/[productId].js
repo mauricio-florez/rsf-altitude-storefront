@@ -193,7 +193,7 @@ const Product = React.memo(lazyProps => {
                   <LinkButton label="Buy on Altitude Sports" />
                 </Grid>
                 <Grid item xs={12}>
-                  {product ? (
+                  {product && product.specs ? (
                     <>
                       <Hbox style={{ marginBottom: theme.spacing(2) }}>
                         <Label style={{ fontSize: 12, fontWeight: 'bold', textTransform: 'uppercase' }}>Details</Label>
@@ -201,7 +201,7 @@ const Product = React.memo(lazyProps => {
                       </Hbox>
                       <Hbox>
                         <List>
-                          {product.specs.map(productSpec => (
+                          {product.specs?.map(productSpec => (
                             <li className={classes.listItem} disableGutters>{productSpec}</li>
                           ))}
                         </List>

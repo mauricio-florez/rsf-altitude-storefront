@@ -94,7 +94,7 @@ export default function normalizeProduct(data, color, size) {
   const url = `/p/${id}`
   const name = data.name[locale]
   const brand = 'Vallier'
-  const price = '879.79'
+  const price = '879.99'
   const priceText = `$${price}`
   const description = data.description[locale]
   const specs = [
