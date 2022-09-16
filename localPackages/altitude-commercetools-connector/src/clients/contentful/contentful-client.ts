@@ -80,22 +80,26 @@ export default function getContentFulClient(req) {
     return _categoryTree
   }
 
-  const getFacets = async ({ locale = 'en-CA' } = {}): Promise<FacetResponseType[]> => {
+  const getFacets = async ({ locale = 'en-CA', categoryId='' } = {}): Promise<FacetResponseType[]> => {
     const { data } = await Axios.post(
       `https://graphql.contentful.com/content/v1/spaces/${spaceId}?access_token=${accessToken}`,
       {
         query: `query {
-                  facetsCollection {
+                  categoryCollection(where: {slug: "${categoryId}"}, limit: 1) {
                     items {
-                      field
-                      label: label(locale: "${locale}")
-                      type
+                      facetsCollection {
+                        items {
+                          field
+                          label: label(locale: "${locale}")
+                          type
+                        }
+                      }
                     }
                   }
                 }`,
       }
     )
-    const facets = data.data.facetsCollection
+    const facets = data.data.categoryCollection.items.map(e => e.facetsCollection)[0]
 
     if (!facets) return []
     return facets.items.map(f => ({...f, field: `variants.attributes.${f.field}`}));
