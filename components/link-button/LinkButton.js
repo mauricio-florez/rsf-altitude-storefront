@@ -12,8 +12,7 @@ import styles from './LinkButton.module.scss'
  * @property {string} prefetch -> prefetch the JSON data for the destination page component. OneOf([visible, always, false]). Default visible
  * @returns React Element
  */
-function LinkButton(props) {
-  const { variant = 'primary', style = 'positive', label = '', url = '#', className = '', prefetch = 'visible' } = props
+function LinkButton({ variant = 'primary', style = 'positive', label = '', url = '#', className = '', prefetch = 'visible' }) {
   const buttonVariantStyle = styles[variant + '--' + style]
 
   const buttonClassName = classnames(styles.container, buttonVariantStyle, className)

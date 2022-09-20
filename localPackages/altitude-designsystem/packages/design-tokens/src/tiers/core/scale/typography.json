@@ -3,12 +3,12 @@
     "scale": {
       "typography": {
         "size": {
-          "12": { "value": "{ core.scale.base.12 }" },
-          "14": { "value": "{ core.scale.base.14 }" },
-          "16": { "value": "{ core.scale.base.16 }" },
-          "18": { "value": "{ core.scale.base.18 }" },
-          "20": { "value": "{ core.scale.base.20 }" },
-          "24": { "value": "{ core.scale.base.24 }" }
+          "12": { "value": "12px" },
+          "14": { "value": "14px" },
+          "16": { "value": "16px" },
+          "18": { "value": "18px" },
+          "20": { "value": "20px" },
+          "24": { "value": "24px" }
         },
         "lineheight": {
           "100": { "value": "1" },
