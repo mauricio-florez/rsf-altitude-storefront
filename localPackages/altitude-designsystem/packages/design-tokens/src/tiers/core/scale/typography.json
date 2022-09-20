@@ -1,0 +1,22 @@
+{
+  "core": {
+    "scale": {
+      "typography": {
+        "size": {
+          "12": { "value": "12px" },
+          "14": { "value": "14px" },
+          "16": { "value": "16px" },
+          "18": { "value": "18px" },
+          "20": { "value": "20px" },
+          "24": { "value": "24px" }
+        },
+        "lineheight": {
+          "100": { "value": "1" },
+          "125": { "value": "1.25" },
+          "150": { "value": "1.5" },
+          "175": { "value": "1.75" }
+        }
+      }
+    }
+  }
+}

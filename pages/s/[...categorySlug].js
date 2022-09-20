@@ -13,7 +13,6 @@ import ShowMore from 'react-storefront/plp/ShowMore'
 import BackToTop from 'react-storefront/BackToTop'
 import Filter from 'react-storefront/plp/Filter'
 import SearchResultsProvider from '../../components/plp/SearchResultsProvider'
-import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
 import FilterButton from 'react-storefront/plp/FilterButton'
 import SortButton from 'react-storefront/plp/SortButton'
 // SEO

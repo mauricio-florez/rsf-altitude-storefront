@@ -3,6 +3,9 @@ const styleDictionaryPackage = require('style-dictionary')
 
 const brand = process.env.BRAND || 'vallier'
 const buildDirectoryPath = 'build/'
+const sharedFilesOptions = {
+  options: { showFileHeader: false }
+}
 
 const cleanBuildFolder = (path) => {
   if (fs.existsSync(path)) {
@@ -13,33 +16,60 @@ const cleanBuildFolder = (path) => {
 }
 
 const getStyleDictionaryConfig = (brand) => {
+  console.log('Brand selected:', `'${brand}'`)
+
   return {
     source: [
-      './src/tiers/core/*.json',
-      `./src/tiers/brand/${brand}/**/*.json`,
-      './src/tiers/component/*.json'
+      './src/tiers/core/**/*.json',
+      `./src/tiers/component/${brand}/**/*.json`
     ],
     platforms: {
       css: {
         transformGroup: 'css',
         buildPath: buildDirectoryPath,
         files: [{
-          destination: 'index.scss',
+          destination: 'css/component.scss',
           format: 'scss/variables',
-          options: {
-            showFileHeader: false
-          }
+          filter: {
+            attributes: {
+              category: 'component'
+            }
+          },
+          ...sharedFilesOptions
+        },
+        {
+          destination: 'css/core.scss',
+          format: 'scss/variables',
+          filter: {
+            attributes: {
+              category: 'core'
+            }
+          },
+          ...sharedFilesOptions
         }]
       },
       js: {
         transformGroup: 'js',
         buildPath: buildDirectoryPath,
         files: [{
-          destination: 'index.js',
+          destination: 'js/component.js',
           format: 'javascript/module',
-          options: {
-            showFileHeader: false
-          }
+          filter: {
+            attributes: {
+              category: 'component'
+            }
+          },
+          ...sharedFilesOptions
+        },
+        {
+          destination: 'js/core.js',
+          format: 'javascript/module',
+          filter: {
+            attributes: {
+              category: 'core'
+            }
+          },
+          ...sharedFilesOptions
         }]
       }
     }

@@ -1,0 +1,88 @@
+{
+  "component": {
+    "button": {
+      "action": {
+        "color": {
+          "background": {
+            "primary": {
+              "positive": {
+                "normal": { "value": "{ core.color.base.darkpastelgreen.base }" },
+                "hover": { "value": "{ core.color.base.grey.1000 }" }
+              },
+              "negative": {
+                "normal": { "value": "{ core.color.base.grey.1000 }" },
+                "hover": { "value": "{ core.color.base.darkpastelgreen.base }" }
+              }
+            },
+            "secondary": {
+              "positive": {
+                "normal": { "value": "{ core.color.base.grey.1000 }" },
+                "hover": { "value": "{ core.color.base.grey.1000 }" }
+              }
+            }
+          },
+          "border": {
+            "primary": {
+              "positive": {
+                "normal": { "value": "{ core.color.base.darkpastelgreen.base }" },
+                "hover": { "value": "{ core.color.base.grey.0 }" }
+              },
+              "negative": {
+                "normal": { "value": "{ core.color.base.grey.1000 }" },
+                "hover": { "value": "{ core.color.base.darkpastelgreen.base }" }
+              }
+            },
+            "secondary": {
+              "positive": {
+                "normal": { "value": "{ core.color.base.grey.0 }" },
+                "hover": { "value": "{ core.color.base.darkpastelgreen.base }" }
+              }
+            }
+          },
+          "text": {
+            "primary": {
+              "positive": {
+                "normal": { "value" : "{ core.color.base.grey.1000 }" },
+                "hover": { "value" : "{ core.color.base.grey.0 }" }
+              },
+              "negative": {
+                "normal": { "value" : "{ core.color.base.grey.0 }" },
+                "hover": { "value" : "{ core.color.base.grey.1000 }" }
+              }
+            },
+            "secondary": {
+              "positive": {
+                "normal": { "value" : "{ core.color.base.grey.0 }" },
+                "hover": { "value" : "{ core.color.base.darkpastelgreen.base }" }
+              }
+            }
+          }
+        },
+        "text": {
+          "size": {
+            "normal": { "value": "{ core.scale.typography.size.12 }" }
+          },
+          "lineheight": {
+            "normal": { "value": "{ core.scale.typography.lineheight.125 }" }
+          }
+        },
+        "spacing": {
+          "padding": {
+            "top": {
+              "normal": { "value": "{ core.scale.spacing.4 }" }
+            },
+            "right": {
+              "normal": { "value": "{ core.scale.spacing.24 }" }
+            },
+            "bottom": {
+              "normal": { "value": "{ core.scale.spacing.4 }" }
+            },
+            "left": {
+              "normal": { "value": "{ core.scale.spacing.24 }" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,59 +1,77 @@
-@import "altitude-designsystem/packages/design-tokens/build/index.scss";
+@import "altitude-designsystem/packages/design-tokens/build/css/component.scss";
 
 .container {
-  letter-spacing: 0.7px;
-  position: relative;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3px;
-  width: 24rem;
-  height: 4.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  background-color: $component-button-primary-color-background;
-  color: $component-button-primary-color-content;
+  min-width: 240px;
+  height: 45px;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  padding-top: $component-button-action-spacing-padding-top-normal;
+  padding-right: $component-button-action-spacing-padding-right-normal;
+  padding-bottom: $component-button-action-spacing-padding-bottom-normal;
+  padding-left: $component-button-action-spacing-padding-left-normal;
+  font-size: $component-button-action-text-size-normal;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  line-height: $component-button-action-text-lineheight-normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s;
 
   &:hover:after {
     content: '→';
     position: absolute;
     animation: slideright 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    right: 2.5rem;
+    right: $component-button-action-spacing-padding-left-normal;
 
     @keyframes slideright {
       0% {
-        right: 2.8rem;
+        right: $component-button-action-spacing-padding-left-normal * 1.125;
       }
     }
   }
 }
 
-.solid {
-  &:hover {
-    background-color: $component-button-primary-hover-background;
-    color: $component-button-primary-color-background;
+.primary {
+  &--positive {
+    border-color: $component-button-action-color-border-primary-positive-normal;
+    background-color: $component-button-action-color-background-primary-positive-normal;
+    color: $component-button-action-color-text-primary-positive-normal;
+
+    &:hover {
+      border-color: $component-button-action-color-border-primary-positive-hover;
+      background-color: $component-button-action-color-background-primary-positive-hover;
+      color: $component-button-action-color-text-primary-positive-hover;
+    }
+  }
+
+  &--negative {
+    border-color: $component-button-action-color-border-primary-negative-normal;
+    background-color: $component-button-action-color-background-primary-negative-normal;
+    color: $component-button-action-color-text-primary-negative-normal;
+
+    &:hover {
+      border-color: $component-button-action-color-border-primary-negative-hover;
+      background-color: $component-button-action-color-background-primary-negative-hover;
+      color: $component-button-action-color-text-primary-negative-hover;
+    }
   }
 }
 
-.outline {
-  border: 1px solid $component-button-primary-color-content;
+.secondary {
+  &--positive {
+    border-color: $component-button-action-color-border-secondary-positive-normal;
+    background-color: $component-button-action-color-background-secondary-positive-normal;
+    color: $component-button-action-color-text-secondary-positive-normal;
 
-  &:hover {
-    color: $component-button-primary-hover-background;
-    border: 1px solid $component-button-primary-hover-background;
-  }
-}
-
-.flat {
-  background-color: transparent;
-
-  &:hover:after {
-    position: unset;
+    &:hover {
+      border-color: $component-button-action-color-border-secondary-positive-hover;
+      background-color: $component-button-action-color-background-secondary-positive-hover;
+      color: $component-button-action-color-text-secondary-positive-hover;
+    }
   }
 }

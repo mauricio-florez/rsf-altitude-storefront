@@ -1,0 +1,17 @@
+{
+  "core": {
+    "scale": {
+      "spacing": {
+        "4": { "value": "{ core.scale.base.4 }" },
+        "8": { "value": "{ core.scale.base.8 }" },
+        "10": { "value": "{ core.scale.base.10 }" },
+        "12": { "value": "{ core.scale.base.12 }" },
+        "14": { "value": "{ core.scale.base.14 }" },
+        "16": { "value": "{ core.scale.base.16 }" },
+        "18": { "value": "{ core.scale.base.18 }" },
+        "20": { "value": "{ core.scale.base.20 }" },
+        "24": { "value": "{ core.scale.base.24 }" }
+      }
+    }
+  }
+}
