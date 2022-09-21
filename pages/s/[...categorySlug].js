@@ -12,8 +12,7 @@ import ProductItem from '../../components/product/ProductItem'
 import ShowMore from 'react-storefront/plp/ShowMore'
 import BackToTop from 'react-storefront/BackToTop'
 import Filter from 'react-storefront/plp/Filter'
-import SearchResultsProvider from '../../components/plp/searchResultsProvider'
-import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
+import SearchResultsProvider from '../../components/plp/SearchResultsProvider'
 import FilterButton from 'react-storefront/plp/FilterButton'
 import SortButton from 'react-storefront/plp/SortButton'
 // SEO
@@ -114,7 +113,12 @@ const Subcategory = lazyProps => {
       <Breadcrumbs items={!loading && pageData.breadcrumbs} />
       <SearchResultsProvider store={store} updateStore={updateStore} queryForState={queryForState}>
         <Container maxWidth="lg" style={{ paddingTop: theme.spacing(2) }}>
-          <Head>{loading ? null : <title>{pageData.title}</title>}</Head>
+          {!loading && (
+            <Head>
+              <title>{pageData.title}</title>
+              <meta name="description" content={pageData.description} />
+            </Head>
+          )}
           <BackToTop />
           <Hbox align="flex-start">
             <Hidden implementation="css" xsDown>

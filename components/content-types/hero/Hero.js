@@ -23,7 +23,7 @@ function Hero({ title, ctaLabel, ctaUrl, image1, image2, image3 }) {
       <div className={styles.content}>
         <div className={styles.headline}>
           <h1 className={styles.title}>{title}</h1>
-          <LinkButton label={ctaLabel} url={ctaUrl} />
+          <LinkButton style="negative" label={ctaLabel} url={ctaUrl} />
         </div>
         <div className={styles.overlap_images}>
           <Image

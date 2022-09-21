@@ -1,4 +1,3 @@
-import getClient from './clients/commercetools/commercetools-client'
 import getContentFulClient from './clients/contentful/contentful-client'
 import normalizeProduct from './clients/commercetools/mappers/normalizeProduct'
 import normalizeEntry from './clients/contentful/mappers/normalizeEntry'
@@ -6,14 +5,15 @@ import createAppData from './clients/commercetools-v2/utils/createAppData'
 
 import fulfillAPIRequest from 'react-storefront/props/fulfillAPIRequest'
 
+import { getProduct } from './clients/commercetools-v2/commercetoolsClient'
+
 export default async function product({ id }, req) {
   const { locale } = req.query
   const { color, size } = req.query
-  const client = await getClient(req)
-  const raw = await client.getProduct(id, { allImages: true })
+  const raw = await getProduct(id)
   const contentfulClient = await getContentFulClient()
   const rawContentfulClient = await contentfulClient.getEntry()
-  const normalizedProduct = normalizeProduct(raw.masterData.current, color, size)
+  const normalizedProduct = normalizeProduct({ data: raw.masterData.current, color, size, locale })
   const normalizedEntry = normalizeEntry(rawContentfulClient)
   const pageData = () => getPageData(normalizedProduct, normalizedEntry)
   const result = await fulfillAPIRequest(req, {
@@ -25,7 +25,7 @@ export default async function product({ id }, req) {
 
 async function getPageData(prod, normalizedEntry) {
   const result = {
-    title: prod.name,
+    title: `Altitude Storefront | ${prod.name}`,
     description: prod.description,
     product: prod,
     breadcrumbs: [
@@ -34,9 +34,9 @@ async function getPageData(prod, normalizedEntry) {
         href: '/',
       },
       {
-        text: 'category.name',
-        as: `/s/category.id`,
-        href: '/s/[subcategoryId]',
+        text: 'Category',
+        as: `/s/${prod.category.id}`,
+        href: `/s/${prod.category.id}`,
       },
     ],
     banner: normalizedEntry,

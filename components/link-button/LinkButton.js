@@ -1,13 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
-import Link from 'react-storefront/link/Link'
+import Link from './../Link'
 import styles from './LinkButton.module.scss'
-
-const VARIANTS = {
-  solid: styles.solid,
-  outline: styles.outline,
-  flat: styles.flat
-}
 
 /**
  *
@@ -18,14 +12,16 @@ const VARIANTS = {
  * @property {string} prefetch -> prefetch the JSON data for the destination page component. OneOf([visible, always, false]). Default visible
  * @returns React Element
  */
-function LinkButton({ variant, label, url, className, prefetch = 'visible' }) {
-  const buttonVariant = VARIANTS[variant] || styles.solid
+function LinkButton({ variant = 'primary', style = 'positive', label = '', url = '#', className = '', prefetch = 'visible' }) {
+  const buttonVariantStyle = styles[variant + '--' + style]
+
+  const buttonClassName = classnames(styles.container, buttonVariantStyle, className)
 
   return (
     <Link
       as={url}
       href={url || '#'}
-      className={classnames(styles.container, buttonVariant, className)}
+      className={buttonClassName}
       prefetch={prefetch}
     >
       {label}

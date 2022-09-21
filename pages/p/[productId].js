@@ -1,28 +1,21 @@
-import React, { useContext, useState, useEffect, useRef } from 'react'
-import clsx from 'clsx'
+import React, { useContext, useEffect, useRef } from 'react'
 import qs from 'qs'
 import useLazyState from 'react-storefront/hooks/useLazyState'
 import Breadcrumbs from 'react-storefront/Breadcrumbs'
-import CmsSlot from 'react-storefront/CmsSlot'
 import MediaCarousel from 'react-storefront/carousel/MediaCarousel'
 import PWAContext from 'react-storefront/PWAContext'
-import { Container, Grid, Typography, Hidden, Button } from '@material-ui/core'
+import { Container, Grid, Typography, Hidden } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
+import List from '@material-ui/core/List'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Row from 'react-storefront/Row'
 import { Hbox } from 'react-storefront/Box'
 import Label from 'react-storefront/Label'
-import Rating from 'react-storefront/Rating'
 import get from 'lodash/get'
 import fetch from 'react-storefront/fetch'
 import { fetchLatest, StaleResponseError } from 'react-storefront/utils/fetchLatest'
 import SessionContext from 'react-storefront/session/SessionContext'
-import AddToCartConfirmation from '../../components/product/AddToCartConfirmation'
-import SuggestedProducts from '../../components/product/SuggestedProducts'
-import Lazy from 'react-storefront/Lazy'
-import TabPanel from 'react-storefront/TabPanel'
-import QuantitySelector from 'react-storefront/QuantitySelector'
-// import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
+import LinkButton from '../../components/link-button/LinkButton'
 import customFetchFromAPI from '../utils/customFetchFromAPI'
 import createLazyProps from 'react-storefront/props/createLazyProps'
 import Head from 'next/head'
@@ -44,55 +37,45 @@ const styles = theme => ({
   carousel: {
     [theme.breakpoints.down('xs')]: {
       margin: theme.spacing(0, -2),
-      width: '100vw',
-    },
+      width: '100vw'
+    }
   },
   lightboxCarousel: {
     [theme.breakpoints.down('xs')]: {
       margin: 0,
-      width: '100%',
-    },
+      width: '100%'
+    }
   },
-  confirmation: {
-    padding: '2px 0',
-  },
-  dockedSnack: {
-    [theme.breakpoints.down('xs')]: {
-      left: '0',
-      bottom: '0',
-      right: '0',
-    },
-  },
-  docked: {
-    [theme.breakpoints.down('xs')]: {
-      fontSize: theme.typography.subtitle1.fontSize,
-      padding: `${theme.spacing(2)}px`,
-      position: 'fixed',
-      left: 0,
-      bottom: 0,
-      width: '100%',
-      zIndex: 10,
-      borderRadius: '0',
-    },
-  },
-  noShadow: {
-    [theme.breakpoints.down('xs')]: {
-      boxShadow: 'none',
-    },
-  },
+  listItem: {
+    listStyle: 'none',
+    margin: '4px 0 0',
+    paddingLeft: 30,
+    textIndent: -30,
+    fontSize: 14,
+    lineHeight: 1.9,
+    '&::before': {
+      content: `''`,
+      display: 'inline-block',
+      position: 'relative',
+      top: -2,
+      minWidth: 7,
+      maxWidth: 7,
+      height: 7,
+      marginRight: 10,
+      marginLeft: 13,
+      backgroundColor: '#0aba46'
+    }
+  }
 })
 
 const useStyles = makeStyles(styles)
 
 const Product = React.memo(lazyProps => {
   const theme = useTheme()
-  const [confirmationOpen, setConfirmationOpen] = useState(false)
-  const [addToCartInProgress, setAddToCartInProgress] = useState(false)
   const [state, updateState] = useLazyState(lazyProps, {
     pageData: { quantity: 1, carousel: { index: 0 } },
   })
   const classes = useStyles()
-  const banner = get(state, 'pageData.banner') || {}
   const product = get(state, 'pageData.product') || {}
   const color = get(state, 'pageData.color') || {}
   const size = get(state, 'pageData.size') || {}
@@ -127,12 +110,14 @@ const Product = React.memo(lazyProps => {
 
   const header = (
     <Row>
-      <Typography variant="h6" component="h1" gutterBottom>
-        {product ? product.name : <Skeleton style={{ height: '1em' }} />}
-      </Typography>
-      <Hbox>
-        <Typography style={{ marginRight: theme.spacing(2) }}>{product.priceText}</Typography>
-        <Rating value={product.rating} reviewCount={10} />
+      <Hbox style={{ marginBottom: theme.spacing(2) }}>
+       <Typography style={{ fontSize: 14 }}>{product ? product.brand : <Skeleton style={{ height: '1em' }} />}</Typography>
+      </Hbox>
+      <Hbox style={{ display: 'flex', alignItems: 'flex-start' }}>
+        <Typography variant="h6" component="h1" gutterBottom style={{ width: '65%', lineHeight: 1.2, fontWeight: 'bold' }}>
+          {product ? product.name : <Skeleton style={{ height: '1em' }} />}
+        </Typography>
+        <Typography style={{ marginRight: theme.spacing(2), width: '35%', lineHeight: 1.2, fontSize: 22, fontWeight: 'bold', textAlign: 'right' }}>{product.priceText}</Typography>
       </Hbox>
     </Row>
   )
@@ -162,10 +147,9 @@ const Product = React.memo(lazyProps => {
       )}
       <Breadcrumbs items={!loading && state.pageData.breadcrumbs} />
       <Container maxWidth="lg" style={{ paddingTop: theme.spacing(2) }}>
-        {banner?.image && <img src={banner.image.fields.file.url} alt={banner.fields.title} />}
         <form onSubmit={handleSubmit} method="post" action-xhr="/api/cart">
           <Grid container spacing={4}>
-            <Grid item xs={12} sm={6} md={5}>
+            <Grid item sm={12} md={8}>
               <Hidden implementation="css" smUp>
                 {header}
               </Hidden>
@@ -177,116 +161,64 @@ const Product = React.memo(lazyProps => {
                 media={color.media || (product && product.media)}
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={7}>
+            <Grid item sm={12} md={4}>
               <Grid container spacing={4}>
                 <Grid item xs={12}>
                   <Hidden implementation="css" xsDown>
                     <div style={{ paddingBottom: theme.spacing(1) }}>{header}</div>
                   </Hidden>
+                </Grid>
+                <Grid item xs={12}>
                   {product ? (
                     <>
-                      <Hbox style={{ marginBottom: 10 }}>
-                        <Label>COLOR: </Label>
+                      <Hbox style={{ marginBottom: theme.spacing(2) }}>
+                        <Label style={{ fontSize: 14, lineHeight: 1.9 }}>{product.description}</Label>
                         <Typography>{color.text}</Typography>
                       </Hbox>
-                      {/* <ProductOptionSelector
-                        options={product.colors}
-                        value={color}
-                        onChange={value =>
-                          updateState({ ...state, pageData: { ...state.pageData, color: value } })
-                        }
-                        strikeThroughDisabled
-                        optionProps={{
-                          showLabel: false,
-                        }}
-                      /> */}
                     </>
                   ) : (
                     <div>
                       <Skeleton style={{ height: 14, marginBottom: theme.spacing(2) }}></Skeleton>
                       <Hbox>
-                        <Skeleton style={{ height: 48, width: 48, marginRight: 10 }}></Skeleton>
-                        <Skeleton style={{ height: 48, width: 48, marginRight: 10 }}></Skeleton>
-                        <Skeleton style={{ height: 48, width: 48, marginRight: 10 }}></Skeleton>
+                        <Skeleton style={{ height: 48, width: 48, marginRight: theme.spacing(2) }}></Skeleton>
+                        <Skeleton style={{ height: 48, width: 48, marginRight: theme.spacing(2) }}></Skeleton>
+                        <Skeleton style={{ height: 48, width: 48, marginRight: theme.spacing(2) }}></Skeleton>
                       </Hbox>
                     </div>
                   )}
                 </Grid>
                 <Grid item xs={12}>
-                  {product ? (
+                  <LinkButton label="Buy on Altitude Sports" />
+                </Grid>
+                <Grid item xs={12}>
+                  {product && product.specs.length > 0 ? (
                     <>
-                      <Hbox style={{ marginBottom: 10 }}>
-                        <Label>SIZE: </Label>
-                        <Typography>{size.text}</Typography>
+                      <Hbox style={{ marginBottom: theme.spacing(2) }}>
+                        <Label style={{ fontSize: 12, fontWeight: 'bold', textTransform: 'uppercase' }}>Details</Label>
+                        <Typography>{color.text}</Typography>
                       </Hbox>
-                      {/* <ProductOptionSelector
-                        options={product.sizes}
-                        value={size}
-                        strikeThroughDisabled
-                        onChange={value =>
-                          updateState({ ...state, pageData: { ...state.pageData, size: value } })
-                        }
-                      /> */}
+                      <Hbox>
+                        <List>
+                          {product.specs?.map(productSpec => (
+                            <li className={classes.listItem} disablegutters>{productSpec}</li>
+                          ))}
+                        </List>
+                      </Hbox>
                     </>
                   ) : (
                     <div>
                       <Skeleton style={{ height: 14, marginBottom: theme.spacing(2) }}></Skeleton>
                       <Hbox>
-                        <Skeleton style={{ height: 48, width: 48, marginRight: 10 }}></Skeleton>
-                        <Skeleton style={{ height: 48, width: 48, marginRight: 10 }}></Skeleton>
-                        <Skeleton style={{ height: 48, width: 48, marginRight: 10 }}></Skeleton>
+                        <Skeleton style={{ height: 48, width: 48, marginRight: theme.spacing(2) }}></Skeleton>
+                        <Skeleton style={{ height: 48, width: 48, marginRight: theme.spacing(2) }}></Skeleton>
+                        <Skeleton style={{ height: 48, width: 48, marginRight: theme.spacing(2) }}></Skeleton>
                       </Hbox>
                     </div>
                   )}
-                </Grid>
-                <Grid item xs={12}>
-                  <Hbox>
-                    <Label>QTY:</Label>
-                    <QuantitySelector
-                      value={quantity}
-                      onChange={value =>
-                        updateState({ ...state, pageData: { ...state.pageData, quantity: value } })
-                      }
-                    />
-                  </Hbox>
-                </Grid>
-                <Grid item xs={12}>
-                  <Button
-                    key="button"
-                    type="submit"
-                    variant="contained"
-                    color="primary"
-                    size="large"
-                    data-th="add-to-cart"
-                    className={clsx(classes.docked, classes.noShadow)}
-                    disabled={addToCartInProgress}
-                  >
-                    Add to Cart
-                  </Button>
-                  <AddToCartConfirmation
-                    open={confirmationOpen}
-                    setOpen={setConfirmationOpen}
-                    product={product}
-                    color={color}
-                    size={size}
-                    quantity={quantity}
-                    price={product.priceText}
-                  />
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <TabPanel>
-              <CmsSlot label="Description">{product.description}</CmsSlot>
-              <CmsSlot label="Specs">{product.specs}</CmsSlot>
-            </TabPanel>
-          </Grid>
-          {/* <Grid item xs={12}>
-            <Lazy style={{ minHeight: 285 }}>
-              <SuggestedProducts product={product} />
-            </Lazy>
-          </Grid> */}
         </form>
       </Container>
     </>

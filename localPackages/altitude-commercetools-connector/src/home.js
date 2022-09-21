@@ -23,15 +23,17 @@ export default async function home(req) {
   const pageData = () => getPageData({ hero, collections })
 
   return await fulfillAPIRequest(req, {
-    appData: createAppData,
-    pageData,
+    appData: () => createAppData({ locale }),
+    pageData
   })
 }
 
 async function getPageData({ hero, collections }) {
   return {
-    title: 'React Storefront | Commercetools Connector',
+    title: 'Altitude Storefront',
+    description: 'This is the main page for Altitude Storefront',
     slots: {
+      heading: 'Welcome to Altitude Storefront Skeleton',title: 'React Storefront | Commercetools Connector',
       hero,
       collections,
     },

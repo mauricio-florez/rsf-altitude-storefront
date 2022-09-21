@@ -1,8 +1,8 @@
-export default function normalizeProduct(data, color, size) {
+export default function normalizeProduct({ data, color, size , locale = 'en-CA'}) {
   // Filter for images supporting type and variations
-  const ProductVarients = []
-  if (data.masterVariant) ProductVarients.push(data.masterVariant)
-  if (data.variants.length > 0) ProductVarients.push(data.variants)
+  const ProductVariants = []
+  if (data.masterVariant) ProductVariants.push(data.masterVariant)
+  if (data.variants.length > 0) ProductVariants.push(data.variants)
 
   function getImages(variation) {
     return data.masterVariant.images.map(image => {
@@ -22,10 +22,10 @@ export default function normalizeProduct(data, color, size) {
     if (!data.masterVariant) return []
 
     const res = []
-    const mastervarient = data.masterVariant.attributes.find(attr => attr.name === type)
+    const masterVariant = data.masterVariant.attributes.find(attr => attr.name === type)
     res.push({
-      id: mastervarient.value,
-      text: mastervarient.value,
+      id: masterVariant.value,
+      text: masterVariant.value,
       image: [],
     })
     for (let variant of data.variants) {
@@ -41,7 +41,7 @@ export default function normalizeProduct(data, color, size) {
     return res
   }
 
-  function getvarientImages(variant) {
+  function getVariantImages(variant) {
     return variant.images.map(image => {
       return {
         src: image.url,
@@ -57,18 +57,18 @@ export default function normalizeProduct(data, color, size) {
 
   function getVariationsColor() {
     if (!data.masterVariant) return []
-    //let variant =ProductVarients.reduce((prev, variant) => prev || variant.attributes.find(item => item.name === 'color'), undefined)
+    //let variant =ProductVariants.reduce((prev, variant) => prev || variant.attributes.find(item => item.name === 'color'), undefined)
 
-    const colors = ProductVarients.filter(item => item).map(variant => {
+    const colors = ProductVariants.filter(item => item).map(variant => {
       if (!variant.attributes) return
       let obj = variant.attributes.find(item => item.name === 'color')
-      let Images = getvarientImages(variant)
+      let images = getVariantimages(variant)
 
       return {
         text: obj.value.key,
         id: obj.value.key.toLowerCase(),
         image: { src: variant.images[0].url, alt: obj.value.key.toLowerCase() },
-        media: { full: Images, thumbnails: Images, thumbnail: Images },
+        media: { full: images, thumbnails: images, thumbnail: images },
       }
     })
     return colors.filter(item => item)
@@ -77,44 +77,91 @@ export default function normalizeProduct(data, color, size) {
   function getImages2(type) {
     if (!data.masterVariant) return []
 
-    const mastervarient = data.masterVariant.attributes.find(attr => attr.name === type)
+    const masterVariant = data.masterVariant.attributes.find(attr => attr.name === type)
     return {
-      src: mastervarient.value,
-      alt: mastervarient.name,
+      src: masterVariant.value,
+      alt: masterVariant.name,
       magnify: {
         height: 1200,
         width: 800,
-        src: mastervarient.value,
-      },
+        src: masterVariant.value,
+      }
     }
   }
-  // const colors: {} = getVariationsColor()
-  const sizes = getVariationsSize('brandSize1')
-  const media = {
-    full: [getImages2('mainImage')],
-    thumbnails: [getImages2('mainImage')], //getImages('medium'),
-  }
 
-  data['price'] = 100 // (data.masterVariant.prices[0].value.centAmount)/100 || 100;
   const id = data.id
-  const specs = {}
+  const url = `/p/${id}`
+  const name = data.name[locale]
+  const brand = 'Vallier'
+  const price = '879.99'
+  const priceText = `$${price}`
+  const description = data.description ? data.description[locale] : 'desc'
+  const specs = {
+    'en-CA': [
+      'Bluesign® certified fabrics',
+      'Crafted with OEKO-TEX® STANDARD 100 certified materials',
+      'Exterior fabric : 100% polyester Toray plain weave fabric',
+      'Secondary fabric : 100% Recycled Polyester Light Downproof Plain Weave',
+      '10,000 mm waterproofness/10,000 g/m² breathability',
+      '90/10 800FP RDS-certified grey goose down insulation',
+      'Adjustable hood',
+      'Seams sealed at critical points',
+      'Baffled construction on the lower part of the jacket',
+      'Draft tube at the neck',
+      'Fleece-lined zippered side pockets',
+      'Microfleece chin guard',
+      'Two-way zipper',
+      'Underarm panels for better mobility',
+      'Articulated sleeves',
+      'Tonal Vallier logo on left sleeve',
+      'Designed in Montreal, made in China',
+      'The model is 5\'6"/171cm and wears a size S'
+    ],
+    'fr-CA': [
+      'Tissus certifiés Bluesign®',
+      'Confectionné avec des matériaux certifiés OEKO-TEX® STANDARD 100',
+      'Étoffe extérieure : tissu armure toile Toray 100 % polyester',
+      'Étoffe secondaire : tissu armure toile antifuite de duvet 100 % polyester recyclé',
+      'Cote d’imperméabilité de 10 000 mm/cote de respirabilité de 10 000 g/m²',
+      'Isolant en duvet d’oie cendrée 90/10 avec facteur de gonflement de 800 certifié RDS',
+      'Capuchon réglable',
+      'Coutures scellées aux endroits critiques',
+      'Construction à cloisons sur la partie inférieure du manteau',
+      'Bourrelet coupe-froid à l’intérieur du col',
+      'Poches latérales à glissière doublées en molleton',
+      'Protège-menton en micromolleton',
+      'Glissière bidirectionnelle',
+      'Panneaux sous les bras offrant une grande liberté de mouvement',
+      'Manches articulées',
+      'Logo Vallier ton sur ton sur la manche gauche',
+      'Conçu à Montréal, fabriqué en Chine',
+      'Le mannequin mesure 5\'6"/171cm et porte une taille P'
+    ]
+  }
+  
+  const media = { full: [getImages2('mainImage')], thumbnails: [getImages2('mainImage')] }
+  const thumbnail = media.thumbnails[0]
+  const colors = {}
+  const sizes = getVariationsSize('brandSize1')
+  const quantity = data.quantity || 1
+  const raw = data
+  
   return {
     id,
-    url: `/p/${id}`,
-    name: data.name['en-CA'], //|| data.productName,
-    price: data.price,
-    priceText: `$${data.price}.00`, // n/a
+    url,
+    name,
+    brand,
+    price,
+    priceText,
     // rating: n/a
-    description:
-      'Ex proident nisi laborum et sint aliquip dolor cupidatat pariatur sint reprehenderit incididunt duis. Ipsum fugiat adipisicing excepteur non id aliquip cupidatat culpa ex. Aliquip consectetur tempor voluptate nulla excepteur magna non. Enim enim sunt ea labore ex aliqua qui. Velit sint irure duis excepteur fugiat elit voluptate anim sint. Anim voluptate duis aliqua duis excepteur in labore aliqua. Deserunt dolore incididunt aliquip duis. Fugiat nulla sint esse in et nisi enim sit. Reprehenderit in non labore est sit voluptate ipsum sit. Proident culpa ex mollit minim laboris ipsum incididunt dolore quis proident esse ea.',
-    specs:
-      'Ut ullamco dolor dolor velit nisi consectetur. Exercitation sint eu labore dolore nostrud nostrud occaecat ex nulla. Velit culpa ex quis minim Lorem quis consequat anim excepteur. Irure anim ea dolor minim aute quis anim duis ea duis irure sit Lorem irure. Ad duis officia exercitation aute aute incididunt tempor non in sunt nisi ut. Dolor consequat et sint tempor amet irure voluptate id. Dolore non cupidatat Lorem minim. Velit consectetur id eiusmod ad ea sint voluptate tempor duis quis excepteur. Dolore sunt ullamco est incididunt sit et. Sint aute nulla excepteur exercitation velit non.', // data.longDescription,
+    description,
+    specs: specs[locale],
     media,
-    thumbnail: media.thumbnails[0],
-    colors: {},
+    thumbnail,
+    colors,
     sizes,
-    quantity: data.quantity || 1,
-    // TODO: Remove later
-    raw: data,
+    quantity,
+    category: {id: data.categories[0].id},
+    raw // TODO: Remove later
   }
 }
